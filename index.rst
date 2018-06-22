@@ -5,7 +5,7 @@
 
 Welcome to Learning Read the Docs's documentation!
 ==================================================
-This tutorial is for learning basic sytanx Commands for read teh docs.
+This tutorial is for learning basic sytanx Commands for read the docs.
 
 *Italic content* with Single ``astric``.
 
