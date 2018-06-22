@@ -49,7 +49,7 @@ file under ``pygments`` section add below line.
 highlight_language = csharp
 
 
-Testing COntinuous Integration
+Testing Continuous Integration
 
 
 
