@@ -25,7 +25,13 @@ This tutorial is for learning basic sytanx Commands for read the docs.
 #. Item2
 #. Item3
 
-Adding Image example:
+Image code:
+
+.. code-block:: html
+
+ .. image:: /images/chrome_2018-06-22_10-42-31.png
+
+Example output:
 
 .. image:: /images/chrome_2018-06-22_10-42-31.png
 
@@ -51,7 +57,7 @@ highlight_language = csharp
 
 Testing Continuous Integration
 
-
+Testing using *Shiny* branch
 
 
 
