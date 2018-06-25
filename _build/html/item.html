@@ -1,0 +1,730 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Navigation and Directory Control Commands &mdash; Learning Read the Docs 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Admonition Syntax" href="Options/admonition.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Learning Read the Docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Options/table.html">Table Syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Options/admonition.html">Admonition Syntax</a></li>
+</ul>
+<p class="caption"><span class="caption-text">item</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><em>Navigation and Directory Control Commands</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#file-maintenance-commands"><em>File Maintenance Commands</em></a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Learning Read the Docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li><em>Navigation and Directory Control Commands</em></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/item.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <hr class="docutils" />
+<p>title: ‘Linux Commands’
+media_order: ‘Linux Directory Structure.jpg’</p>
+<hr class="docutils" />
+<div class="section" id="navigation-and-directory-control-commands">
+<span id="navigation-and-directory-control-commands"></span><h1><em>Navigation and Directory Control Commands</em><a class="headerlink" href="#navigation-and-directory-control-commands" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">mkdir</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">Create</span> <span class="n">the</span> <span class="n">DIRECTORY</span><span class="p">(</span><span class="n">ies</span><span class="p">),</span> <span class="k">if</span> <span class="n">they</span> <span class="n">do</span> <span class="ow">not</span> <span class="n">already</span> <span class="n">exist</span><span class="o">.</span>
+    <span class="n">Usage</span><span class="p">:</span> <span class="n">mkdir</span> <span class="n">DirectoryName</span>
+
+    <span class="n">Arguments</span><span class="p">:</span>
+    <span class="o">-</span><span class="n">m</span><span class="p">,</span> <span class="o">--</span><span class="n">mode</span><span class="o">=</span><span class="n">MODE</span>         <span class="n">Set</span> <span class="n">file</span> <span class="n">mode</span> <span class="p">(</span><span class="k">as</span> <span class="ow">in</span> <span class="n">chmod</span><span class="p">),</span> <span class="ow">not</span> <span class="n">a</span><span class="o">=</span><span class="n">rwx</span> <span class="o">-</span> <span class="n">umask</span>
+    <span class="o">-</span><span class="n">p</span><span class="p">,</span> <span class="o">--</span><span class="n">parents</span>                    <span class="n">No</span> <span class="n">error</span> <span class="k">if</span> <span class="n">existing</span><span class="p">,</span> <span class="n">make</span> <span class="n">parent</span> <span class="n">directories</span> <span class="k">as</span> <span class="n">needed</span>
+    <span class="o">-</span><span class="n">v</span><span class="p">,</span> <span class="o">--</span><span class="n">verbose</span>                    <span class="n">Print</span> <span class="n">a</span> <span class="n">message</span> <span class="k">for</span> <span class="n">each</span> <span class="n">created</span> <span class="n">directory</span>
+</pre></div>
+</div>
+<p>``</br></p>
+<p><code class="docutils literal notranslate"><span class="pre">ls</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">ls</span> <span class="n">command</span> <span class="n">lists</span> <span class="n">the</span> <span class="n">directory</span> <span class="n">content</span>
+    <span class="n">Usage</span><span class="p">:</span> <span class="n">ls</span> <span class="n">argument</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+
+    <span class="n">Arguments</span><span class="p">:</span>
+    <span class="o">-</span><span class="n">a</span><span class="p">,</span> <span class="o">--</span><span class="nb">all</span>                               <span class="n">Display</span> <span class="nb">all</span> <span class="n">files</span> <span class="n">including</span> <span class="n">idden</span> <span class="n">files</span>
+    <span class="o">-</span><span class="n">d</span><span class="p">,</span> <span class="o">--</span><span class="n">directory</span>                     <span class="n">List</span> <span class="n">directories</span> <span class="n">themselves</span><span class="p">,</span> <span class="ow">not</span> <span class="n">their</span> <span class="n">contents</span>
+    <span class="o">-</span><span class="n">i</span><span class="p">,</span> <span class="o">--</span><span class="n">inode</span>                           <span class="n">Print</span> <span class="n">the</span> <span class="n">index</span> <span class="n">number</span> <span class="n">of</span> <span class="n">each</span> <span class="n">file</span>
+    <span class="o">-</span><span class="n">k</span><span class="p">,</span> <span class="o">--</span><span class="n">kibibytes</span>                     <span class="n">Default</span> <span class="n">to</span> <span class="mi">1024</span><span class="o">-</span><span class="n">byte</span> <span class="n">blocks</span> <span class="k">for</span> <span class="n">disk</span> <span class="n">usage</span>
+    <span class="o">-</span><span class="n">h</span><span class="p">,</span> <span class="o">--</span><span class="n">human</span><span class="o">-</span><span class="n">readable</span>        <span class="n">With</span> <span class="o">-</span><span class="n">l</span> <span class="ow">and</span><span class="o">/</span><span class="ow">or</span> <span class="o">-</span><span class="n">s</span><span class="p">,</span> <span class="nb">print</span> <span class="n">human</span> <span class="n">readable</span> <span class="n">sizes</span>
+    <span class="o">-</span><span class="n">l</span>                                        <span class="n">Use</span> <span class="n">a</span> <span class="n">long</span> <span class="n">listing</span> <span class="nb">format</span>
+    <span class="o">-</span><span class="n">n</span><span class="p">,</span> <span class="o">--</span><span class="n">numeric</span><span class="o">-</span><span class="n">uid</span><span class="o">-</span><span class="n">gid</span>          <span class="n">Like</span> <span class="o">-</span><span class="n">l</span><span class="p">,</span> <span class="n">but</span> <span class="nb">list</span> <span class="n">numeric</span> <span class="n">user</span> <span class="ow">and</span> <span class="n">group</span> <span class="n">IDs</span>
+    <span class="o">-</span><span class="n">r</span><span class="p">,</span> <span class="o">--</span><span class="n">reverse</span>                       <span class="n">Reverse</span> <span class="n">order</span> <span class="k">while</span> <span class="n">sorting</span>
+    <span class="o">-</span><span class="n">t</span>                                       <span class="n">Sort</span> <span class="n">by</span> <span class="n">modification</span> <span class="n">time</span><span class="p">,</span> <span class="n">newest</span> <span class="n">first</span>
+</pre></div>
+</div>
+<p>``</br></p>
+<p><code class="docutils literal notranslate"><span class="pre">cd</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">cd</span> <span class="n">command</span> <span class="n">change</span> <span class="n">the</span> <span class="n">shell</span> <span class="n">working</span> <span class="n">directory</span>
+    <span class="n">Usage</span><span class="p">:</span> <span class="n">cd</span> <span class="o">..</span> <span class="o">/</span> <span class="n">cd</span> <span class="n">directoryname</span>
+
+    <span class="n">Arguments</span><span class="p">:</span>
+    <span class="n">cd</span> <span class="o">..</span>               <span class="n">It</span> <span class="n">will</span> <span class="n">move</span> <span class="n">to</span> <span class="n">the</span> <span class="n">parent</span> <span class="n">directory</span>
+    <span class="n">cd</span> <span class="o">../../..</span>         <span class="n">It</span> <span class="n">will</span> <span class="n">move</span> <span class="n">to</span> <span class="n">the</span> <span class="n">third</span> <span class="n">parent</span> <span class="n">directory</span>
+    <span class="n">cd</span> <span class="o">~</span>               <span class="n">It</span> <span class="n">will</span> <span class="n">move</span> <span class="n">to</span> <span class="n">the</span> <span class="n">home</span> <span class="n">directory</span>
+</pre></div>
+</div>
+<p>``</br></p>
+<p><code class="docutils literal notranslate"><span class="pre">pwd</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">pwd</span> <span class="p">(</span><span class="nb">print</span> <span class="n">working</span> <span class="n">directory</span><span class="p">)</span> <span class="n">command</span> <span class="n">displays</span> <span class="n">the</span> <span class="n">current</span> <span class="n">working</span> <span class="n">directory</span>
+    <span class="n">Usage</span><span class="p">:</span> <span class="n">pwd</span>
+</pre></div>
+</div>
+<p>``</br></p>
+<p><code class="docutils literal notranslate"><span class="pre">rmdir</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">rmdir</span> <span class="n">command</span> <span class="n">removes</span> <span class="n">the</span> <span class="n">directory</span><span class="p">(</span><span class="n">ies</span><span class="p">),</span> <span class="k">if</span> <span class="n">they</span> <span class="n">are</span> <span class="n">empty</span> 
+    <span class="n">Usage</span><span class="p">:</span> <span class="n">rmdir</span> <span class="n">directryname</span>
+
+    <span class="n">Arguments</span><span class="p">:</span>
+    <span class="n">p</span><span class="p">,</span> <span class="o">--</span><span class="n">parents</span>    <span class="n">Remove</span> <span class="n">DIRECTORY</span> <span class="ow">and</span> <span class="n">its</span> <span class="n">ancestors</span><span class="o">&lt;/</span><span class="n">br</span><span class="o">&gt;</span>
+    <span class="o">-</span><span class="n">v</span><span class="p">,</span> <span class="o">--</span><span class="n">verbose</span>   <span class="n">Output</span> <span class="n">a</span> <span class="n">diagnostic</span> <span class="k">for</span> <span class="n">every</span> <span class="n">directory</span> <span class="n">processed</span> <span class="o">&lt;/</span><span class="n">br</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>``</br></p>
+</div>
+<div class="section" id="file-maintenance-commands">
+<span id="file-maintenance-commands"></span><h1><em>File Maintenance Commands</em><a class="headerlink" href="#file-maintenance-commands" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">touch</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    Update the access and modification times of each FILE to the current time.
+    A FILE argument that does not exist is created empty, unless -c or –h is supplied.
+    A FILE argument string of - is handled specially and causes touch to change the times of the file associated with standard output.
+    
+    Usage: touch filename
+
+    Arguments:
+    -a                              Change only the access time
+    -c, --no-create           Do not create any files
+    -d, --date=STRING   Parse STRING and use it instead of current time
+    -f                              (ignored)
+    -h, --no-dereference    Affect each symbolic link instead of any referenced file (useful only on systems that can change the timestamps of a symlink)
+    -m                          Change only the modification time
+    -r, --reference=FILE    Use this file&#39;s times instead of current time
+    -t STAMP                Use [[CC]YY]MMDDhhmm[.ss] instead of current time
+    --time=WORD         Change the specified time:
+                                   WORD is access, a time, or use: equivalent to -a
+                                   WORD is modify or mtime: equivalent to -m
+</pre></div>
+</div>
+<p>``</br></p>
+<p><code class="docutils literal notranslate"><span class="pre">find</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    find command can be used to find files and directories and perform subsequent operations on them. It supports searching by file, folder, name, creation date, modification date, owner          and permissions
+    Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec][expression]
+
+    Arguments:
+    Operators (decreasing precedence; -and is implicit where no others are given):
+    ( EXPR )   ! EXPR   -not EXPR   EXPR1 -a EXPR2   EXPR1 -and EXPR2
+    EXPR1 -o EXPR2   EXPR1 -or EXPR2   EXPR1 , EXPR2
+    
+    Positional options (always true): -daystart -follow -regextype
+    
+    Normal options (always true, specified before other expressions):
+    -depth --help -maxdepth LEVELS -mindepth LEVELS -mount -noleaf
+    --version -xdev -ignore_readdir_race -noignore_readdir_race
+
+    Tests (N can be +N or -N or N): -amin N -anewer FILE -atime N -cmin N
+    -cnewer FILE -ctime N -empty -false -fstype TYPE -gid N -group NAME -ilname PATTERN -iname PATTERN -inum N -iwholename PATTERN -iregex PATTERN -links N -lname                      PATTERN -mmin N -mtime N -name PATTERN -newer FILE -nouser -nogroup -path PATTERN -perm [-/]MODE -regex PATTERN -readable -writable –executable -wholename                      PATTERN -size N[bcwkMG] -true -type [bcdpflsD] -uid N     -used N -user NAME -xtype [bcdpfls] -context CONTEXT
+
+    Actions: -delete -print0 -printf FORMAT -fprintf FILE FORMAT -print
+    -fprint0 FILE -fprint FILE -ls -fls FILE -prune -quit
+    -exec COMMAND ; -exec COMMAND {} + -ok COMMAND ;
+    -execdir COMMAND ; -execdir COMMAND {} + -okdir COMMAND ;
+</pre></div>
+</div>
+<p>``</br></p>
+<p><code class="docutils literal notranslate"><span class="pre">locate</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">locate</span> <span class="n">command</span> <span class="ow">is</span> <span class="n">used</span> <span class="n">to</span> <span class="n">search</span> <span class="k">for</span> <span class="n">the</span> <span class="n">location</span> <span class="n">of</span> <span class="n">the</span> <span class="n">file</span> <span class="ow">or</span> <span class="n">group</span> <span class="n">of</span> <span class="n">files</span>
+    <span class="n">Usage</span><span class="p">:</span> <span class="n">locate</span> <span class="n">arguments</span>
+    
+    <span class="n">Arguments</span><span class="p">:</span>
+    <span class="n">locate</span> <span class="p">[</span><span class="o">-</span><span class="n">d</span> <span class="n">path</span> <span class="o">|</span> <span class="o">--</span><span class="n">database</span><span class="o">=</span><span class="n">path</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">e</span> <span class="o">|</span> <span class="o">-</span><span class="n">E</span> <span class="o">|</span> <span class="o">--</span><span class="p">[</span><span class="n">non</span><span class="o">-</span><span class="p">]</span><span class="n">existing</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">i</span> <span class="o">|</span> <span class="o">--</span><span class="n">ignore</span><span class="o">-</span><span class="n">case</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">w</span> <span class="o">|</span> <span class="o">--</span><span class="n">wholename</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">b</span> <span class="o">|</span> <span class="o">--</span><span class="n">basename</span><span class="p">]</span>
+    <span class="p">[</span><span class="o">--</span><span class="n">limit</span><span class="o">=</span><span class="n">N</span> <span class="o">|</span> <span class="o">-</span><span class="n">l</span> <span class="n">N</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">S</span> <span class="o">|</span> <span class="o">--</span><span class="n">statistics</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="mi">0</span> <span class="o">|</span> <span class="o">--</span><span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">c</span> <span class="o">|</span> <span class="o">--</span><span class="n">count</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">P</span> <span class="o">|</span> <span class="o">-</span><span class="n">H</span> <span class="o">|</span> <span class="o">--</span><span class="n">nofollow</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">L</span> <span class="o">|</span> <span class="o">--</span><span class="n">follow</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">m</span> <span class="o">|</span> <span class="o">--</span><span class="n">mmap</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">s</span> <span class="o">|</span> <span class="o">--</span><span class="n">stdio</span><span class="p">]</span>
+    <span class="p">[</span><span class="o">-</span><span class="n">A</span> <span class="o">|</span> <span class="o">--</span><span class="nb">all</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">p</span> <span class="o">|</span> <span class="o">--</span><span class="nb">print</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">r</span> <span class="o">|</span> <span class="o">--</span><span class="n">regex</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">regextype</span><span class="o">=</span><span class="n">TYPE</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="nb">max</span><span class="o">-</span><span class="n">database</span><span class="o">-</span><span class="n">age</span> <span class="n">D</span><span class="p">]</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">updatedb</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">locate</span> <span class="n">uses</span> <span class="n">a</span> <span class="n">previously</span> <span class="n">built</span> <span class="n">database</span><span class="p">,</span> <span class="n">If</span> <span class="n">database</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">updated</span> <span class="n">then</span> <span class="n">locate</span> <span class="n">command</span> <span class="n">will</span> <span class="ow">not</span> <span class="n">show</span> <span class="n">the</span> <span class="n">output</span><span class="o">.</span> <span class="n">To</span> <span class="n">sync</span> <span class="n">the</span> <span class="n">database</span> <span class="n">it</span> <span class="ow">is</span> <span class="n">must</span> <span class="n">to</span> <span class="n">execute</span> <span class="n">updatedb</span> <span class="n">command</span>
+    <span class="n">Usage</span><span class="p">:</span> <span class="n">updated</span>
+</pre></div>
+</div>
+<p>``</br></p>
+<p><code class="docutils literal notranslate"><span class="pre">umask</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">Display</span> <span class="ow">or</span> <span class="nb">set</span> <span class="n">file</span> <span class="n">mode</span> <span class="n">mask</span><span class="o">.</span>
+    <span class="n">Sets</span> <span class="n">the</span> <span class="n">user</span> <span class="n">file</span><span class="o">-</span><span class="n">creation</span> <span class="n">mask</span> <span class="n">to</span> <span class="n">MODE</span><span class="o">.</span>  <span class="n">If</span> <span class="n">MODE</span> <span class="ow">is</span> <span class="n">omitted</span><span class="p">,</span> <span class="n">prints</span> <span class="n">the</span> <span class="n">current</span> <span class="n">value</span> <span class="n">of</span> <span class="n">the</span> <span class="n">mask</span><span class="o">.</span>
+    <span class="n">If</span> <span class="n">MODE</span> <span class="n">begins</span> <span class="k">with</span> <span class="n">a</span> <span class="n">digit</span><span class="p">,</span> <span class="n">it</span> <span class="ow">is</span> <span class="n">interpreted</span> <span class="k">as</span> <span class="n">an</span> <span class="n">octal</span> <span class="n">number</span><span class="p">;</span> <span class="n">Otherwise</span> <span class="n">it</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">symbolic</span> <span class="n">mode</span> <span class="n">string</span> <span class="n">like</span> <span class="n">that</span> <span class="n">accepted</span> <span class="n">by</span> <span class="n">chmod</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span>
+    <span class="n">Usage</span><span class="p">:</span> <span class="n">umask</span> <span class="p">[</span><span class="o">-</span><span class="n">p</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">S</span><span class="p">]</span> <span class="p">[</span><span class="n">mode</span><span class="p">]</span>
+    
+    <span class="n">Arguments</span><span class="p">:</span>
+    <span class="o">-</span><span class="n">p</span>        <span class="k">if</span> <span class="n">MODE</span> <span class="ow">is</span> <span class="n">omitted</span><span class="p">,</span> <span class="n">output</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">form</span> <span class="n">that</span> <span class="n">may</span> <span class="n">be</span> <span class="n">reused</span> <span class="k">as</span> <span class="nb">input</span>
+    <span class="o">-</span><span class="n">S</span>        <span class="n">makes</span> <span class="n">the</span> <span class="n">output</span> <span class="n">symbolic</span><span class="p">;</span> <span class="n">otherwise</span> <span class="n">an</span> <span class="n">octal</span> <span class="n">number</span> <span class="ow">is</span> <span class="n">output</span>
+
+    <span class="n">Exit</span> <span class="n">Status</span><span class="p">:</span>
+    <span class="n">Returns</span> <span class="n">success</span> <span class="n">unless</span> <span class="n">MODE</span> <span class="ow">is</span> <span class="n">invalid</span> <span class="ow">or</span> <span class="n">an</span> <span class="n">invalid</span> <span class="n">option</span> <span class="ow">is</span> <span class="n">given</span><span class="o">.</span>
+    
+        <span class="n">Root</span> <span class="n">umask</span> <span class="n">value</span> <span class="ow">is</span>                  <span class="mi">022</span>
+        <span class="n">Normal</span> <span class="n">user</span> <span class="n">umask</span> <span class="n">value</span> <span class="ow">is</span>      <span class="mi">002</span>
+        <span class="n">Base</span> <span class="n">permissions</span> <span class="k">for</span> <span class="n">file</span>           <span class="mi">666</span>
+</pre></div>
+</div>
+<p>``</br></p>
+<p><code class="docutils literal notranslate"><span class="pre">chmod</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">Chmod</span> <span class="n">command</span> <span class="ow">is</span> <span class="n">used</span> <span class="n">to</span> <span class="n">change</span> <span class="n">the</span> <span class="n">file</span> <span class="n">permissions</span>
+    <span class="n">Usage</span><span class="p">:</span> <span class="n">chmod</span> <span class="n">filepermissons</span> <span class="n">filename</span>
+    <span class="n">Example</span><span class="p">:</span> <span class="n">chmod</span> <span class="mi">777</span> <span class="n">filename</span>
+                    <span class="n">chmod</span> <span class="n">u</span><span class="o">+</span><span class="n">rwx</span> <span class="n">filename</span>
+                    <span class="n">chmod</span> <span class="n">ugo</span><span class="o">+</span><span class="n">rwx</span>
+    
+    <span class="n">Arguments</span><span class="p">:</span>
+    <span class="o">-</span><span class="n">c</span><span class="p">,</span> <span class="o">--</span><span class="n">changes</span>               <span class="n">like</span> <span class="n">verbose</span> <span class="n">but</span> <span class="n">report</span> <span class="n">only</span> <span class="n">when</span> <span class="n">a</span> <span class="n">change</span> <span class="ow">is</span> <span class="n">made</span>
+    <span class="o">-</span><span class="n">f</span><span class="p">,</span> <span class="o">--</span><span class="n">silent</span><span class="p">,</span> <span class="o">--</span><span class="n">quiet</span>         <span class="n">Suppress</span> <span class="n">most</span> <span class="n">error</span> <span class="n">messages</span>
+    <span class="o">-</span><span class="n">v</span><span class="p">,</span> <span class="o">--</span><span class="n">verbose</span>                <span class="n">output</span> <span class="n">a</span> <span class="n">diagnostic</span> <span class="k">for</span> <span class="n">every</span> <span class="n">file</span> <span class="n">processed</span>
+    <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">preserve</span><span class="o">-</span><span class="n">root</span>       <span class="n">do</span> <span class="ow">not</span> <span class="n">treat</span> <span class="s1">&#39;/&#39;</span> <span class="n">specially</span> <span class="p">(</span><span class="n">the</span> <span class="n">default</span><span class="p">)</span>
+    <span class="o">--</span><span class="n">preserve</span><span class="o">-</span><span class="n">root</span>             <span class="n">fail</span> <span class="n">to</span> <span class="n">operate</span> <span class="n">recursively</span> <span class="n">on</span> <span class="s1">&#39;/&#39;</span>
+    <span class="o">--</span><span class="n">reference</span><span class="o">=</span><span class="n">RFILE</span>       <span class="n">use</span> <span class="n">RFILE</span><span class="s1">&#39;s mode instead of MODE values</span>
+    <span class="o">-</span><span class="n">R</span><span class="p">,</span> <span class="o">--</span><span class="n">recursive</span>              <span class="n">change</span> <span class="n">files</span> <span class="ow">and</span> <span class="n">directories</span> <span class="n">recursively</span>
+</pre></div>
+</div>
+<p>``</br></p>
+<p><code class="docutils literal notranslate"><span class="pre">chown</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">Chown</span> <span class="n">command</span> <span class="ow">is</span> <span class="n">used</span> <span class="n">to</span> <span class="n">change</span> <span class="n">the</span> <span class="n">ownership</span> <span class="n">of</span> <span class="n">the</span> <span class="n">file</span>
+    <span class="n">Only</span> <span class="n">root</span> <span class="n">user</span> <span class="n">can</span> <span class="n">execute</span> <span class="n">this</span> <span class="n">command</span>
+    <span class="n">Usage</span><span class="p">:</span> <span class="n">chown</span> <span class="n">owner</span> <span class="n">filename</span>
+    
+    <span class="n">Arguments</span><span class="p">:</span>
+     <span class="o">-</span><span class="n">c</span><span class="p">,</span> <span class="o">--</span><span class="n">changes</span>              <span class="n">like</span> <span class="n">verbose</span> <span class="n">but</span> <span class="n">report</span> <span class="n">only</span> <span class="n">when</span> <span class="n">a</span> <span class="n">change</span> <span class="ow">is</span> <span class="n">made</span>
+    <span class="o">-</span><span class="n">f</span><span class="p">,</span> <span class="o">--</span><span class="n">silent</span><span class="p">,</span> <span class="o">--</span><span class="n">quiet</span>           <span class="n">suppress</span> <span class="n">most</span> <span class="n">error</span> <span class="n">messages</span>
+    <span class="o">-</span><span class="n">v</span><span class="p">,</span> <span class="o">--</span><span class="n">verbose</span>               <span class="n">output</span> <span class="n">a</span> <span class="n">diagnostic</span> <span class="k">for</span> <span class="n">every</span> <span class="n">file</span> <span class="n">processed</span>
+    <span class="o">--</span><span class="n">dereference</span>               <span class="n">affect</span> <span class="n">the</span> <span class="n">referent</span> <span class="n">of</span> <span class="n">each</span> <span class="n">symbolic</span> <span class="n">link</span> <span class="p">(</span><span class="n">this</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">default</span><span class="p">),</span> <span class="n">rather</span> <span class="n">than</span> <span class="n">the</span> <span class="n">symbolic</span> <span class="n">link</span> <span class="n">itself</span>
+    <span class="o">-</span><span class="n">h</span><span class="p">,</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">dereference</span>    <span class="n">affect</span> <span class="n">symbolic</span> <span class="n">links</span> <span class="n">instead</span> <span class="n">of</span> <span class="nb">any</span> <span class="n">referenced</span> <span class="n">file</span>
+                                        <span class="p">(</span><span class="n">useful</span> <span class="n">only</span> <span class="n">on</span> <span class="n">systems</span> <span class="n">that</span> <span class="n">can</span> <span class="n">change</span> <span class="n">the</span> <span class="n">ownership</span> <span class="n">of</span> <span class="n">a</span> <span class="n">symlink</span><span class="p">)</span>
+    <span class="o">--</span><span class="n">from</span><span class="o">=</span><span class="n">CURRENT_OWNER</span><span class="p">:</span><span class="n">CURRENT_GROUP</span>
+                                    <span class="n">change</span> <span class="n">the</span> <span class="n">owner</span> <span class="ow">and</span><span class="o">/</span><span class="ow">or</span> <span class="n">group</span> <span class="n">of</span> <span class="n">each</span> <span class="n">file</span> <span class="n">only</span> <span class="k">if</span> <span class="n">its</span> <span class="n">current</span> <span class="n">owner</span> <span class="ow">and</span><span class="o">/</span><span class="ow">or</span> <span class="n">group</span> <span class="n">match</span> <span class="n">those</span> <span class="n">specified</span> <span class="n">here</span><span class="o">.</span>  <span class="n">Either</span> <span class="n">may</span> <span class="n">be</span> <span class="n">omitted</span><span class="p">,</span> <span class="ow">in</span> <span class="n">which</span> <span class="n">case</span> <span class="n">a</span> <span class="n">match</span> <span class="ow">is</span> <span class="ow">not</span>                                          <span class="n">required</span> <span class="k">for</span> <span class="n">the</span> <span class="n">omitted</span> <span class="n">attribute</span>
+    <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">preserve</span><span class="o">-</span><span class="n">root</span>      <span class="n">do</span> <span class="ow">not</span> <span class="n">treat</span> <span class="s1">&#39;/&#39;</span> <span class="n">specially</span> <span class="p">(</span><span class="n">the</span> <span class="n">default</span><span class="p">)</span>
+    <span class="o">--</span><span class="n">preserve</span><span class="o">-</span><span class="n">root</span>             <span class="n">fail</span> <span class="n">to</span> <span class="n">operate</span> <span class="n">recursively</span> <span class="n">on</span> <span class="s1">&#39;/&#39;</span>
+    <span class="o">--</span><span class="n">reference</span><span class="o">=</span><span class="n">RFILE</span>       <span class="n">use</span> <span class="n">RFILE</span><span class="s1">&#39;s owner and group rather than specifying OWNER:GROUP values</span>
+    <span class="o">-</span><span class="n">R</span><span class="p">,</span> <span class="o">--</span><span class="n">recursive</span>         <span class="n">operate</span> <span class="n">on</span> <span class="n">files</span> <span class="ow">and</span> <span class="n">directories</span> <span class="n">recursively</span>
+
+    <span class="n">Examples</span><span class="p">:</span>
+      <span class="n">chown</span> <span class="n">root</span> <span class="o">/</span><span class="n">u</span>         <span class="n">Change</span> <span class="n">the</span> <span class="n">owner</span> <span class="n">of</span> <span class="o">/</span><span class="n">u</span> <span class="n">to</span> <span class="s2">&quot;root&quot;</span><span class="o">.</span>
+      <span class="n">chown</span> <span class="n">root</span><span class="p">:</span><span class="n">staff</span> <span class="o">/</span><span class="n">u</span>  <span class="n">Likewise</span><span class="p">,</span> <span class="n">but</span> <span class="n">also</span> <span class="n">change</span> <span class="n">its</span> <span class="n">group</span> <span class="n">to</span> <span class="s2">&quot;staff&quot;</span><span class="o">.</span>
+      <span class="n">chown</span> <span class="o">-</span><span class="n">hR</span> <span class="n">root</span> <span class="o">/</span><span class="n">u</span>   <span class="n">Change</span> <span class="n">the</span> <span class="n">owner</span> <span class="n">of</span> <span class="o">/</span><span class="n">u</span> <span class="ow">and</span> <span class="n">subfiles</span> <span class="n">to</span> <span class="s2">&quot;root&quot;</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>``</br></p>
+<p><code class="docutils literal notranslate"><span class="pre">chgrp</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">chgrp</span> <span class="n">command</span> <span class="ow">is</span> <span class="n">used</span> <span class="n">to</span> <span class="n">change</span> <span class="n">the</span> <span class="n">ownership</span> <span class="n">of</span> <span class="n">the</span> <span class="n">group</span>
+    <span class="n">Only</span> <span class="n">root</span> <span class="n">user</span> <span class="n">can</span> <span class="n">execute</span> <span class="n">this</span> <span class="n">command</span>
+    <span class="n">Usage</span><span class="p">:</span> <span class="n">chown</span> <span class="n">owner</span> <span class="n">groupname</span>
+    
+    <span class="n">Arguments</span><span class="p">:</span>
+     <span class="o">-</span><span class="n">c</span><span class="p">,</span> <span class="o">--</span><span class="n">changes</span>              <span class="n">like</span> <span class="n">verbose</span> <span class="n">but</span> <span class="n">report</span> <span class="n">only</span> <span class="n">when</span> <span class="n">a</span> <span class="n">change</span> <span class="ow">is</span> <span class="n">made</span>
+    <span class="o">-</span><span class="n">f</span><span class="p">,</span> <span class="o">--</span><span class="n">silent</span><span class="p">,</span> <span class="o">--</span><span class="n">quiet</span>           <span class="n">suppress</span> <span class="n">most</span> <span class="n">error</span> <span class="n">messages</span>
+    <span class="o">-</span><span class="n">v</span><span class="p">,</span> <span class="o">--</span><span class="n">verbose</span>               <span class="n">output</span> <span class="n">a</span> <span class="n">diagnostic</span> <span class="k">for</span> <span class="n">every</span> <span class="n">file</span> <span class="n">processed</span>
+    <span class="o">--</span><span class="n">dereference</span>               <span class="n">affect</span> <span class="n">the</span> <span class="n">referent</span> <span class="n">of</span> <span class="n">each</span> <span class="n">symbolic</span> <span class="n">link</span> <span class="p">(</span><span class="n">this</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">default</span><span class="p">),</span> <span class="n">rather</span> <span class="n">than</span> <span class="n">the</span> <span class="n">symbolic</span> <span class="n">link</span> <span class="n">itself</span>
+    <span class="o">-</span><span class="n">h</span><span class="p">,</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">dereference</span>    <span class="n">affect</span> <span class="n">symbolic</span> <span class="n">links</span> <span class="n">instead</span> <span class="n">of</span> <span class="nb">any</span> <span class="n">referenced</span> <span class="n">file</span>
+                                        <span class="p">(</span><span class="n">useful</span> <span class="n">only</span> <span class="n">on</span> <span class="n">systems</span> <span class="n">that</span> <span class="n">can</span> <span class="n">change</span> <span class="n">the</span> <span class="n">ownership</span> <span class="n">of</span> <span class="n">a</span> <span class="n">symlink</span><span class="p">)</span>
+    <span class="o">--</span><span class="n">from</span><span class="o">=</span><span class="n">CURRENT_OWNER</span><span class="p">:</span><span class="n">CURRENT_GROUP</span>
+                                    <span class="n">change</span> <span class="n">the</span> <span class="n">owner</span> <span class="ow">and</span><span class="o">/</span><span class="ow">or</span> <span class="n">group</span> <span class="n">of</span> <span class="n">each</span> <span class="n">file</span> <span class="n">only</span> <span class="k">if</span> <span class="n">its</span> <span class="n">current</span> <span class="n">owner</span> <span class="ow">and</span><span class="o">/</span><span class="ow">or</span> <span class="n">group</span> <span class="n">match</span> <span class="n">those</span> <span class="n">specified</span> <span class="n">here</span><span class="o">.</span>  <span class="n">Either</span> <span class="n">may</span> <span class="n">be</span> <span class="n">omitted</span><span class="p">,</span> <span class="ow">in</span> <span class="n">which</span> <span class="n">case</span> <span class="n">a</span> <span class="n">match</span> <span class="ow">is</span> <span class="ow">not</span>                                          <span class="n">required</span> <span class="k">for</span> <span class="n">the</span> <span class="n">omitted</span> <span class="n">attribute</span>
+    <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">preserve</span><span class="o">-</span><span class="n">root</span>      <span class="n">do</span> <span class="ow">not</span> <span class="n">treat</span> <span class="s1">&#39;/&#39;</span> <span class="n">specially</span> <span class="p">(</span><span class="n">the</span> <span class="n">default</span><span class="p">)</span>
+    <span class="o">--</span><span class="n">preserve</span><span class="o">-</span><span class="n">root</span>             <span class="n">fail</span> <span class="n">to</span> <span class="n">operate</span> <span class="n">recursively</span> <span class="n">on</span> <span class="s1">&#39;/&#39;</span>
+    <span class="o">--</span><span class="n">reference</span><span class="o">=</span><span class="n">RFILE</span>        <span class="n">use</span> <span class="n">RFILE</span><span class="s1">&#39;s group rather than specifying a GROUP value</span>
+    <span class="o">-</span><span class="n">R</span><span class="p">,</span> <span class="o">--</span><span class="n">recursive</span>         <span class="n">operate</span> <span class="n">on</span> <span class="n">files</span> <span class="ow">and</span> <span class="n">directories</span> <span class="n">recursively</span>
+
+    <span class="n">Examples</span><span class="p">:</span>
+     <span class="n">chgrp</span> <span class="n">staff</span> <span class="o">/</span><span class="n">u</span>         <span class="n">Change</span> <span class="n">the</span> <span class="n">group</span> <span class="n">of</span> <span class="o">/</span><span class="n">u</span> <span class="n">to</span> <span class="s2">&quot;staff&quot;</span><span class="o">.</span>
+     <span class="n">chgrp</span> <span class="o">-</span><span class="n">hR</span> <span class="n">staff</span> <span class="o">/</span><span class="n">u</span>  <span class="n">Change</span> <span class="n">the</span> <span class="n">group</span> <span class="n">of</span> <span class="o">/</span><span class="n">u</span> <span class="ow">and</span> <span class="n">subfiles</span> <span class="n">to</span> <span class="s2">&quot;staff&quot;</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>``</br></p>
+<p><code class="docutils literal notranslate"><span class="pre">cp</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">cp</span> <span class="n">command</span> <span class="ow">is</span> <span class="n">used</span> <span class="n">to</span> <span class="n">copy</span> <span class="n">SOURCE</span> <span class="n">to</span> <span class="n">DESTination</span><span class="p">,</span> <span class="ow">or</span> <span class="n">multiple</span> <span class="n">SOURCE</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">to</span> <span class="n">DIRECTORY</span>
+    <span class="n">Usage</span><span class="p">:</span> <span class="n">cp</span> <span class="n">source</span> <span class="n">destination</span>
+    
+    <span class="n">Arguments</span><span class="p">:</span>
+    <span class="o">-</span><span class="n">a</span><span class="p">,</span>    <span class="o">--</span><span class="n">archive</span>                           <span class="n">same</span> <span class="k">as</span> <span class="o">-</span><span class="n">dR</span> <span class="o">--</span><span class="n">preserve</span><span class="o">=</span><span class="nb">all</span>
+            <span class="o">--</span><span class="n">attributes</span><span class="o">-</span><span class="n">only</span>                <span class="n">don</span><span class="s1">&#39;t copy the file data, just the attributes</span>
+            <span class="o">--</span><span class="n">backup</span><span class="p">[</span><span class="o">=</span><span class="n">CONTROL</span><span class="p">]</span>     <span class="n">make</span> <span class="n">a</span> <span class="n">backup</span> <span class="n">of</span> <span class="n">each</span> <span class="n">existing</span> <span class="n">destination</span> <span class="n">file</span>
+    <span class="o">-</span><span class="n">b</span>                                              <span class="n">like</span> <span class="o">--</span><span class="n">backup</span> <span class="n">but</span> <span class="n">does</span> <span class="ow">not</span> <span class="n">accept</span> <span class="n">an</span> <span class="n">argument</span>
+            <span class="o">--</span><span class="n">copy</span><span class="o">-</span><span class="n">contents</span>                <span class="n">copy</span> <span class="n">contents</span> <span class="n">of</span> <span class="n">special</span> <span class="n">files</span> <span class="n">when</span> <span class="n">recursive</span>
+    <span class="o">-</span><span class="n">d</span>                                              <span class="n">same</span> <span class="k">as</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">dereference</span> <span class="o">--</span><span class="n">preserve</span><span class="o">=</span><span class="n">links</span>
+    <span class="o">-</span><span class="n">f</span><span class="p">,</span> <span class="o">--</span><span class="n">force</span>                                  <span class="k">if</span> <span class="n">an</span> <span class="n">existing</span> <span class="n">destination</span> <span class="n">file</span> <span class="n">cannot</span> <span class="n">be</span> <span class="n">opened</span><span class="p">,</span> <span class="n">remove</span> <span class="n">it</span> <span class="ow">and</span> <span class="k">try</span> <span class="n">again</span> <span class="p">(</span><span class="n">this</span> <span class="n">option</span> <span class="ow">is</span> <span class="n">ignored</span> <span class="n">when</span> <span class="n">the</span> <span class="o">-</span><span class="n">n</span> <span class="n">option</span> <span class="ow">is</span> <span class="n">also</span> <span class="n">used</span><span class="p">)</span> 
+    <span class="o">-</span><span class="n">i</span><span class="p">,</span> <span class="o">--</span><span class="n">interactive</span>                          <span class="n">Prompt</span> <span class="n">before</span> <span class="n">overwrite</span> <span class="p">(</span><span class="n">overrides</span> <span class="n">a</span> <span class="n">previous</span> <span class="o">-</span><span class="n">n</span> <span class="n">option</span><span class="p">)</span>
+    <span class="o">-</span><span class="n">H</span>                                             <span class="n">follow</span> <span class="n">command</span><span class="o">-</span><span class="n">line</span> <span class="n">symbolic</span> <span class="n">links</span> <span class="ow">in</span> <span class="n">SOURCE</span>
+    <span class="o">-</span><span class="n">l</span><span class="p">,</span> <span class="o">--</span><span class="n">link</span>                                     <span class="n">hard</span> <span class="n">link</span> <span class="n">files</span> <span class="n">instead</span> <span class="n">of</span> <span class="n">copying</span>
+    <span class="o">-</span><span class="n">L</span><span class="p">,</span> <span class="o">--</span><span class="n">dereference</span>                      <span class="n">always</span> <span class="n">follow</span> <span class="n">symbolic</span> <span class="n">links</span> <span class="ow">in</span> <span class="n">SOURCE</span>
+    <span class="o">-</span><span class="n">n</span><span class="p">,</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">clobber</span>                        <span class="n">do</span> <span class="ow">not</span> <span class="n">overwrite</span> <span class="n">an</span> <span class="n">existing</span> <span class="n">file</span> <span class="p">(</span><span class="n">overrides</span> <span class="n">a</span> <span class="n">previous</span> <span class="o">-</span><span class="n">i</span> <span class="n">option</span><span class="p">)</span>
+    <span class="o">-</span><span class="n">P</span><span class="p">,</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">dereference</span>                 <span class="n">never</span> <span class="n">follow</span> <span class="n">symbolic</span> <span class="n">links</span> <span class="ow">in</span> <span class="n">SOURCE</span>
+    <span class="o">-</span><span class="n">p</span>                                              <span class="n">same</span> <span class="k">as</span> <span class="o">--</span><span class="n">preserve</span><span class="o">=</span><span class="n">mode</span><span class="p">,</span><span class="n">ownership</span><span class="p">,</span><span class="n">timestamps</span>
+            <span class="o">--</span><span class="n">preserve</span><span class="p">[</span><span class="o">=</span><span class="n">ATTR_LIST</span><span class="p">]</span>  <span class="n">preserve</span> <span class="n">the</span> <span class="n">specified</span> <span class="n">attributes</span> <span class="p">(</span><span class="n">default</span><span class="p">:</span> <span class="n">mode</span><span class="p">,</span><span class="n">ownership</span><span class="p">,</span><span class="n">timestamps</span><span class="p">),</span> <span class="k">if</span> <span class="n">possible</span> <span class="n">additional</span> <span class="n">attributes</span><span class="p">:</span> <span class="n">context</span><span class="p">,</span> <span class="n">links</span><span class="p">,</span> <span class="n">xattr</span><span class="p">,</span> <span class="nb">all</span>
+            <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">preserve</span><span class="o">=</span><span class="n">ATTR_LIST</span>  
+                                                     <span class="n">don</span><span class="s1">&#39;t preserve the specified attributes</span>
+            <span class="o">--</span><span class="n">parents</span>                           <span class="n">use</span> <span class="n">full</span> <span class="n">source</span> <span class="n">file</span> <span class="n">name</span> <span class="n">under</span> <span class="n">DIRECTORY</span>
+    <span class="o">-</span><span class="n">R</span><span class="p">,</span> <span class="o">-</span><span class="n">r</span><span class="p">,</span> <span class="o">--</span><span class="n">recursive</span>                      <span class="n">copy</span> <span class="n">directories</span> <span class="n">recursively</span>
+            <span class="o">--</span><span class="n">reflink</span><span class="p">[</span><span class="o">=</span><span class="n">WHEN</span><span class="p">]</span>              <span class="n">control</span> <span class="n">clone</span><span class="o">/</span><span class="n">CoW</span> <span class="n">copies</span><span class="o">.</span>
+            <span class="o">--</span><span class="n">remove</span><span class="o">-</span><span class="n">destination</span>        <span class="n">remove</span> <span class="n">each</span> <span class="n">existing</span> <span class="n">destination</span> <span class="n">file</span> <span class="n">before</span> <span class="n">attempting</span> <span class="n">to</span> <span class="nb">open</span> <span class="n">it</span> <span class="p">(</span><span class="n">contrast</span> <span class="k">with</span> <span class="o">--</span><span class="n">force</span><span class="p">)</span>
+            <span class="o">--</span><span class="n">sparse</span><span class="o">=</span><span class="n">WHEN</span>               <span class="n">control</span> <span class="n">creation</span> <span class="n">of</span> <span class="n">sparse</span> <span class="n">files</span><span class="o">.</span> <span class="n">See</span> <span class="n">below</span>
+            <span class="o">--</span><span class="n">strip</span><span class="o">-</span><span class="n">trailing</span><span class="o">-</span><span class="n">slashes</span>       <span class="n">remove</span> <span class="nb">any</span> <span class="n">trailing</span> <span class="n">slashes</span> <span class="kn">from</span> <span class="nn">each</span> <span class="n">SOURCE</span> <span class="n">argument</span>
+    <span class="o">-</span><span class="n">s</span><span class="p">,</span> <span class="o">--</span><span class="n">symbolic</span><span class="o">-</span><span class="n">link</span>                     <span class="n">make</span> <span class="n">symbolic</span> <span class="n">links</span> <span class="n">instead</span> <span class="n">of</span> <span class="n">copying</span>
+    <span class="o">-</span><span class="n">S</span><span class="p">,</span> <span class="o">--</span><span class="n">suffix</span><span class="o">=</span><span class="n">SUFFIX</span>                 <span class="n">override</span> <span class="n">the</span> <span class="n">usual</span> <span class="n">backup</span> <span class="n">suffix</span>
+    <span class="o">-</span><span class="n">t</span><span class="p">,</span> <span class="o">--</span><span class="n">target</span><span class="o">-</span><span class="n">directory</span><span class="o">=</span><span class="n">DIRECTORY</span>  
+                                                    <span class="n">copy</span> <span class="nb">all</span> <span class="n">SOURCE</span> <span class="n">arguments</span> <span class="n">into</span> <span class="n">DIRECTORY</span>
+    <span class="o">-</span><span class="n">T</span><span class="p">,</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">target</span><span class="o">-</span><span class="n">directory</span>           <span class="n">treat</span> <span class="n">DEST</span> <span class="k">as</span> <span class="n">a</span> <span class="n">normal</span> <span class="n">file</span>
+    <span class="o">-</span><span class="n">u</span><span class="p">,</span> <span class="o">--</span><span class="n">update</span>                             <span class="n">copy</span> <span class="n">only</span> <span class="n">when</span> <span class="n">the</span> <span class="n">SOURCE</span> <span class="n">file</span> <span class="ow">is</span> <span class="n">newer</span> <span class="n">than</span> <span class="n">the</span> <span class="n">destination</span> <span class="n">file</span> <span class="ow">or</span> <span class="n">when</span> <span class="n">the</span> <span class="n">destination</span> <span class="n">file</span> <span class="ow">is</span> <span class="n">missing</span>
+    <span class="o">-</span><span class="n">v</span><span class="p">,</span> <span class="o">--</span><span class="n">verbose</span>                           <span class="n">explains</span> <span class="n">what</span> <span class="ow">is</span> <span class="n">being</span> <span class="n">done</span>
+    <span class="o">-</span><span class="n">x</span><span class="p">,</span> <span class="o">--</span><span class="n">one</span><span class="o">-</span><span class="n">file</span><span class="o">-</span><span class="n">system</span>               <span class="n">stays</span> <span class="n">on</span> <span class="n">this</span> <span class="n">file</span> <span class="n">system</span>
+</pre></div>
+</div>
+<p>``</br></p>
+<p><code class="docutils literal notranslate"><span class="pre">mv</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">mv</span> <span class="n">command</span> <span class="ow">is</span> <span class="n">used</span> <span class="n">to</span> <span class="n">rename</span> <span class="n">SOURCE</span> <span class="n">to</span> <span class="n">DESTination</span><span class="p">,</span> <span class="ow">or</span> <span class="n">move</span> <span class="n">SOURCE</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">to</span> <span class="n">DIRECTORY</span><span class="o">.</span>
+    <span class="n">Usage</span><span class="p">:</span> <span class="n">mv</span> <span class="n">source</span> <span class="n">destination</span>
+    
+    <span class="n">Arguments</span><span class="p">:</span>
+            <span class="o">--</span><span class="n">backup</span><span class="p">[</span><span class="o">=</span><span class="n">CONTROL</span><span class="p">]</span>     <span class="n">make</span> <span class="n">a</span> <span class="n">backup</span> <span class="n">of</span> <span class="n">each</span> <span class="n">existing</span> <span class="n">destination</span> <span class="n">file</span>
+    <span class="o">-</span><span class="n">b</span>                                              <span class="n">like</span> <span class="o">--</span><span class="n">backup</span> <span class="n">but</span> <span class="n">does</span> <span class="ow">not</span> <span class="n">accept</span> <span class="n">an</span> <span class="n">argument</span>
+    <span class="o">-</span><span class="n">f</span><span class="p">,</span> <span class="o">--</span><span class="n">force</span>                                  <span class="k">if</span> <span class="n">an</span> <span class="n">existing</span> <span class="n">destination</span> <span class="n">file</span> <span class="n">cannot</span> <span class="n">be</span> <span class="n">opened</span><span class="p">,</span> <span class="n">remove</span> <span class="n">it</span> <span class="ow">and</span> <span class="k">try</span> <span class="n">again</span> <span class="p">(</span><span class="n">this</span> <span class="n">option</span> <span class="ow">is</span> <span class="n">ignored</span> <span class="n">when</span> <span class="n">the</span> <span class="o">-</span><span class="n">n</span> <span class="n">option</span> <span class="ow">is</span> <span class="n">also</span> <span class="n">used</span><span class="p">)</span> 
+    <span class="o">-</span><span class="n">i</span><span class="p">,</span> <span class="o">--</span><span class="n">interactive</span>                          <span class="n">Prompt</span> <span class="n">before</span> <span class="n">overwrite</span> <span class="p">(</span><span class="n">overrides</span> <span class="n">a</span> <span class="n">previous</span> <span class="o">-</span><span class="n">n</span> <span class="n">option</span><span class="p">)</span>
+    <span class="o">-</span><span class="n">n</span><span class="p">,</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">clobber</span>                        <span class="n">do</span> <span class="ow">not</span> <span class="n">overwrite</span> <span class="n">an</span> <span class="n">existing</span> <span class="n">file</span> <span class="p">(</span><span class="n">overrides</span> <span class="n">a</span> <span class="n">previous</span> <span class="o">-</span><span class="n">i</span> <span class="n">option</span><span class="p">)</span>
+    <span class="n">If</span> <span class="n">you</span> <span class="n">specify</span> <span class="n">more</span> <span class="n">than</span> <span class="n">one</span> <span class="n">of</span> <span class="o">-</span><span class="n">i</span><span class="p">,</span> <span class="o">-</span><span class="n">f</span><span class="p">,</span> <span class="o">-</span><span class="n">n</span><span class="p">,</span> <span class="n">only</span> <span class="n">the</span> <span class="n">final</span> <span class="n">one</span> <span class="n">takes</span> <span class="n">effect</span><span class="o">.</span> 
+            <span class="o">--</span><span class="n">strip</span><span class="o">-</span><span class="n">trailing</span><span class="o">-</span><span class="n">slashes</span>  <span class="n">remove</span> <span class="nb">any</span> <span class="n">trailing</span> <span class="n">slashes</span> <span class="kn">from</span> <span class="nn">each</span> <span class="n">SOURCE</span> <span class="n">argument</span>
+    <span class="o">-</span><span class="n">S</span><span class="p">,</span> <span class="o">--</span><span class="n">suffix</span><span class="o">=</span><span class="n">SUFFIX</span>                 <span class="n">override</span> <span class="n">the</span> <span class="n">usual</span> <span class="n">backup</span> <span class="n">suffix</span>
+    <span class="o">-</span><span class="n">t</span><span class="p">,</span> <span class="o">--</span><span class="n">target</span><span class="o">-</span><span class="n">directory</span><span class="o">=</span><span class="n">DIRECTORY</span>  
+                                                    <span class="n">copy</span> <span class="nb">all</span> <span class="n">SOURCE</span> <span class="n">arguments</span> <span class="n">into</span> <span class="n">DIRECTORY</span>
+    <span class="o">-</span><span class="n">T</span><span class="p">,</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">target</span><span class="o">-</span><span class="n">directory</span>           <span class="n">treat</span> <span class="n">DEST</span> <span class="k">as</span> <span class="n">a</span> <span class="n">normal</span> <span class="n">file</span>
+    <span class="o">-</span><span class="n">u</span><span class="p">,</span> <span class="o">--</span><span class="n">update</span>                             <span class="n">move</span> <span class="n">only</span> <span class="n">when</span> <span class="n">the</span> <span class="n">SOURCE</span> <span class="n">file</span> <span class="ow">is</span> <span class="n">newer</span> <span class="n">than</span> <span class="n">the</span> <span class="n">destination</span> <span class="n">file</span> <span class="ow">or</span> <span class="n">when</span> <span class="n">the</span> <span class="n">destination</span> <span class="n">file</span> <span class="ow">is</span> <span class="n">missing</span>
+    <span class="o">-</span><span class="n">v</span><span class="p">,</span> <span class="o">--</span><span class="n">verbose</span>                           <span class="n">explains</span> <span class="n">what</span> <span class="ow">is</span> <span class="n">being</span> <span class="n">done</span>
+    <span class="o">-</span><span class="n">x</span><span class="p">,</span> <span class="o">--</span><span class="n">one</span><span class="o">-</span><span class="n">file</span><span class="o">-</span><span class="n">system</span>               <span class="n">stays</span> <span class="n">on</span> <span class="n">this</span> <span class="n">file</span> <span class="n">system</span>
+</pre></div>
+</div>
+<p>``</br></p>
+<p><code class="docutils literal notranslate"><span class="pre">rm</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">rm</span> <span class="n">command</span> <span class="ow">is</span> <span class="n">used</span> <span class="n">to</span> <span class="n">remove</span> <span class="ow">or</span> <span class="n">unlink</span> <span class="n">the</span> <span class="n">files</span>
+    <span class="n">Usage</span><span class="p">:</span> <span class="n">rm</span> <span class="n">oprtin</span> <span class="n">filename</span>
+    
+    <span class="n">Arguments</span><span class="p">:</span>
+    <span class="o">-</span><span class="n">f</span><span class="p">,</span> <span class="o">--</span><span class="n">force</span>             <span class="n">ignore</span> <span class="n">nonexistent</span> <span class="n">files</span> <span class="ow">and</span> <span class="n">arguments</span><span class="p">,</span> <span class="n">never</span> <span class="n">prompt</span>
+    <span class="o">-</span><span class="n">i</span>                          <span class="n">prompt</span> <span class="n">before</span> <span class="n">every</span> <span class="n">removal</span>
+    <span class="o">-</span><span class="n">I</span>                          <span class="n">prompt</span> <span class="n">once</span> <span class="n">before</span> <span class="n">removing</span> <span class="n">more</span> <span class="n">than</span> <span class="n">three</span> <span class="n">files</span><span class="p">,</span> <span class="ow">or</span>
+                                <span class="n">when</span> <span class="n">removing</span> <span class="n">recursively</span><span class="p">;</span> <span class="n">less</span> <span class="n">intrusive</span> <span class="n">than</span> <span class="o">-</span><span class="n">i</span><span class="p">,</span> <span class="k">while</span> <span class="n">still</span> <span class="n">giving</span> <span class="n">protection</span> <span class="n">against</span> <span class="n">most</span> <span class="n">mistakes</span>
+    <span class="o">--</span><span class="n">interactive</span><span class="p">[</span><span class="o">=</span><span class="n">WHEN</span><span class="p">]</span>  
+                                <span class="n">prompt</span> <span class="n">according</span> <span class="n">to</span> <span class="n">WHEN</span><span class="p">:</span> <span class="n">never</span><span class="p">,</span> <span class="n">once</span> <span class="p">(</span><span class="o">-</span><span class="n">I</span><span class="p">),</span> <span class="ow">or</span> <span class="n">always</span> <span class="p">(</span><span class="o">-</span><span class="n">i</span><span class="p">);</span> <span class="n">without</span> <span class="n">WHEN</span><span class="p">,</span> <span class="n">prompt</span> <span class="n">always</span>
+  <span class="o">--</span><span class="n">one</span><span class="o">-</span><span class="n">file</span><span class="o">-</span><span class="n">system</span>   <span class="n">when</span> <span class="n">removing</span> <span class="n">a</span> <span class="n">hierarchy</span> <span class="n">recursively</span><span class="p">,</span> <span class="n">skip</span> <span class="nb">any</span> <span class="n">directory</span> <span class="n">that</span> <span class="ow">is</span> <span class="n">on</span> <span class="n">a</span> <span class="n">file</span> <span class="n">system</span> <span class="n">different</span> <span class="kn">from</span> <span class="nn">that</span> <span class="n">of</span> <span class="n">the</span> <span class="n">corresponding</span> <span class="n">command</span> <span class="n">line</span> <span class="n">argument</span>
+  <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">preserve</span><span class="o">-</span><span class="n">root</span>  <span class="n">do</span> <span class="ow">not</span> <span class="n">treat</span> <span class="s1">&#39;/&#39;</span> <span class="n">specially</span>
+  <span class="o">--</span><span class="n">preserve</span><span class="o">-</span><span class="n">root</span>       <span class="n">do</span> <span class="ow">not</span> <span class="n">remove</span> <span class="s1">&#39;/&#39;</span> <span class="p">(</span><span class="n">default</span><span class="p">)</span>
+ <span class="o">-</span><span class="n">r</span><span class="p">,</span> <span class="o">-</span><span class="n">R</span><span class="p">,</span> <span class="o">--</span><span class="n">recursive</span>    <span class="n">remove</span> <span class="n">directories</span> <span class="ow">and</span> <span class="n">their</span> <span class="n">contents</span> <span class="n">recursively</span>
+ <span class="o">-</span><span class="n">d</span><span class="p">,</span> <span class="o">--</span><span class="nb">dir</span>                   <span class="n">remove</span> <span class="n">empty</span> <span class="n">directories</span>
+ 
+ <span class="n">By</span> <span class="n">default</span><span class="p">,</span> <span class="n">rm</span> <span class="n">does</span> <span class="ow">not</span> <span class="n">remove</span> <span class="n">directories</span><span class="o">.</span>  <span class="n">Use</span> <span class="n">the</span> <span class="o">--</span><span class="n">recursive</span> <span class="p">(</span><span class="o">-</span><span class="n">r</span> <span class="ow">or</span> <span class="o">-</span><span class="n">R</span><span class="p">)</span> <span class="n">option</span> <span class="n">to</span> <span class="n">remove</span> <span class="n">each</span> <span class="n">listed</span> <span class="n">directory</span><span class="p">,</span> <span class="n">too</span><span class="p">,</span> <span class="n">along</span> <span class="k">with</span> <span class="nb">all</span> <span class="n">of</span> <span class="n">its</span> <span class="n">contents</span><span class="o">.</span>
+<span class="n">To</span> <span class="n">remove</span> <span class="n">a</span> <span class="n">file</span> <span class="n">whose</span> <span class="n">name</span> <span class="n">starts</span> <span class="k">with</span> <span class="n">a</span> <span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="k">for</span> <span class="n">example</span> <span class="s1">&#39;-foo&#39;</span><span class="p">,</span> <span class="n">use</span> <span class="n">one</span> <span class="n">of</span> <span class="n">these</span> <span class="n">commands</span><span class="p">:</span>
+    <span class="n">rm</span> <span class="o">--</span> <span class="o">-</span><span class="n">foo</span>
+    <span class="n">rm</span> <span class="o">./-</span><span class="n">foo</span>
+</pre></div>
+</div>
+<p>``</br></p>
+<p><code class="docutils literal notranslate"><span class="pre">file</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    file command is used to determines type of FILEs
+    Usage: file filename
+    
+    Arguments:
+     -m, --magic-file LIST      use LIST as a colon-separated list of magic number files
+    -z, --uncompress            try to look inside compressed files
+    -Z, --uncompress-noreport  
+                                            only print the contents of compressed files
+    -b, --brief                         do not prepend filenames to output lines
+    -c, --checking-printout     
+                                            print the parsed form of the magic file, use in conjunction with -m to debug a new magic file before installing it
+    -e, --exclude TEST          exclude TEST from the list of test to be performed for file. Valid tests are: apptype, ascii, cdf, compress, elf, encoding, soft, tar, text, tokens
+    -f, --files-from FILE          read the filenames to be examined from FILE
+    -F, --separator STRING   use string as separator instead of `:&#39;
+    -i, --mime                         output MIME type strings (--mime-type and --mime-encoding)
+        --apple                                output the Apple CREATOR/TYPE
+        --extension                         output a slash-separated list of extensions
+        --mime-type                        output the MIME type
+        --mime-encoding                output the MIME encoding
+    -k, --keep-going                don&#39;t stop at the first match
+    -l, --list                              list magic strength
+    -L, --dereference              follow symlinks
+    -h, --no-dereference        don&#39;t follow symlinks (default)
+    -n, --no-buffer                 do not buffer output
+    -N, --no-pad                    do not pad output
+    -0, --print0                        terminate filenames with ASCII NUL
+    -p, --preserve-date         preserve access times on files
+    -P, --parameter             set file engine parameter limits
+                           indir            15 recursion limit for indirection
+                           name         30 use limit for name/use magic
+                           elf_notes   256 max ELF notes processed
+                           elf_phnum 128 max ELF prog sections processed
+                           elf_shnum 32768 max ELF sections processed
+    -r, --raw                           don&#39;t translate unprintable chars to \ooo
+    -s, --special-files             treat special (block/char devices) files as ordinary ones
+    -C, --compile                   compile file specified by -m
+    -d, --debug                     print debugging messages
+</pre></div>
+</div>
+<p>``</br></p>
+<p>`wc</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">Print</span> <span class="n">newline</span><span class="p">,</span> <span class="n">word</span><span class="p">,</span> <span class="ow">and</span> <span class="n">byte</span> <span class="n">counts</span> <span class="k">for</span> <span class="n">each</span> <span class="n">FILE</span><span class="p">,</span> <span class="ow">and</span> <span class="n">a</span> <span class="n">total</span> <span class="n">line</span> <span class="k">if</span> <span class="n">more</span> <span class="n">than</span> <span class="n">one</span> <span class="n">FILE</span> <span class="ow">is</span> <span class="n">specified</span><span class="o">.</span>  <span class="n">A</span> <span class="n">word</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">non</span><span class="o">-</span><span class="n">zero</span><span class="o">-</span><span class="n">length</span> <span class="n">sequence</span> <span class="n">of</span> <span class="n">characters</span> <span class="n">delimited</span> <span class="n">by</span> <span class="n">white</span> <span class="n">space</span><span class="o">.</span>
+    <span class="n">With</span> <span class="n">no</span> <span class="n">FILE</span><span class="p">,</span> <span class="ow">or</span> <span class="n">when</span> <span class="n">FILE</span> <span class="ow">is</span> <span class="o">-</span><span class="p">,</span> <span class="n">read</span> <span class="n">standard</span> <span class="nb">input</span>
+    <span class="n">Usage</span><span class="p">:</span> <span class="n">wc</span> <span class="n">argument</span> <span class="n">filename</span>
+    
+    <span class="n">Arguments</span><span class="p">:</span>
+    <span class="o">-</span><span class="n">c</span><span class="p">,</span> <span class="o">--</span><span class="nb">bytes</span>                 <span class="nb">print</span> <span class="n">the</span> <span class="n">byte</span> <span class="n">counts</span>
+    <span class="o">-</span><span class="n">m</span><span class="p">,</span> <span class="o">--</span><span class="n">chars</span>             <span class="nb">print</span> <span class="n">the</span> <span class="n">character</span> <span class="n">counts</span>
+    <span class="o">-</span><span class="n">l</span><span class="p">,</span> <span class="o">--</span><span class="n">lines</span>                 <span class="nb">print</span> <span class="n">the</span> <span class="n">newline</span> <span class="n">counts</span>
+    <span class="o">--</span><span class="n">files0</span><span class="o">-</span><span class="n">from</span><span class="o">=</span><span class="n">F</span>        <span class="n">read</span> <span class="nb">input</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">files</span> <span class="n">specified</span> <span class="n">by</span>
+                                    <span class="n">NUL</span><span class="o">-</span><span class="n">terminated</span> <span class="n">names</span> <span class="ow">in</span> <span class="n">file</span> <span class="n">F</span><span class="p">;</span>
+                                    <span class="n">If</span> <span class="n">F</span> <span class="ow">is</span> <span class="o">-</span> <span class="n">then</span> <span class="n">read</span> <span class="n">names</span> <span class="kn">from</span> <span class="nn">standard</span> <span class="nb">input</span>
+    <span class="o">-</span><span class="n">L</span><span class="p">,</span> <span class="o">--</span><span class="nb">max</span><span class="o">-</span><span class="n">line</span><span class="o">-</span><span class="n">length</span>  <span class="nb">print</span> <span class="n">the</span> <span class="n">maximum</span> <span class="n">display</span> <span class="n">width</span>
+    <span class="o">-</span><span class="n">w</span><span class="p">,</span> <span class="o">--</span><span class="n">words</span>            <span class="nb">print</span> <span class="n">the</span> <span class="n">word</span> <span class="n">counts</span>
+</pre></div>
+</div>
+<p>``</br></p>
+<p><code class="docutils literal notranslate"><span class="pre">ln</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">Create</span> <span class="n">hard</span> <span class="n">links</span> <span class="n">by</span> <span class="n">default</span><span class="p">,</span> <span class="n">symbolic</span> <span class="n">links</span> <span class="k">with</span> <span class="o">--</span><span class="n">symbolic</span><span class="o">.</span>
+    <span class="n">By</span> <span class="n">default</span><span class="p">,</span> <span class="n">each</span> <span class="n">destination</span> <span class="p">(</span><span class="n">name</span> <span class="n">of</span> <span class="n">new</span> <span class="n">link</span><span class="p">)</span> <span class="n">should</span> <span class="ow">not</span> <span class="n">already</span> <span class="n">exist</span><span class="o">.</span> <span class="n">When</span> <span class="n">creating</span> <span class="n">hard</span> <span class="n">links</span><span class="p">,</span> <span class="n">each</span> <span class="n">TARGET</span> <span class="n">must</span> <span class="n">exist</span><span class="o">.</span>  <span class="n">Symbolic</span> <span class="n">links</span> <span class="n">can</span> <span class="n">hold</span> <span class="n">arbitrary</span> <span class="n">text</span><span class="p">;</span> <span class="k">if</span> <span class="n">later</span> <span class="n">resolved</span><span class="p">,</span> <span class="n">a</span>           <span class="n">relative</span> <span class="n">link</span> <span class="ow">is</span> <span class="n">interpreted</span> <span class="ow">in</span> <span class="n">relation</span> <span class="n">to</span> <span class="n">its</span> <span class="n">parent</span> <span class="n">directory</span><span class="o">.</span>
+    <span class="n">Usage</span><span class="p">:</span> <span class="n">ln</span> <span class="p">[</span><span class="n">OPTION</span><span class="p">]</span><span class="o">...</span> <span class="p">[</span><span class="o">-</span><span class="n">T</span><span class="p">]</span> <span class="n">TARGET</span> <span class="n">LINK_NAME</span>     <span class="p">(</span><span class="mi">1</span><span class="n">st</span> <span class="n">form</span><span class="p">)</span>
+                <span class="ow">or</span><span class="p">:</span>  <span class="n">ln</span> <span class="p">[</span><span class="n">OPTION</span><span class="p">]</span><span class="o">...</span> <span class="n">TARGET</span>                           <span class="p">(</span><span class="mi">2</span><span class="n">nd</span> <span class="n">form</span><span class="p">)</span>
+                <span class="ow">or</span><span class="p">:</span>  <span class="n">ln</span> <span class="p">[</span><span class="n">OPTION</span><span class="p">]</span><span class="o">...</span> <span class="n">TARGET</span><span class="o">...</span> <span class="n">DIRECTORY</span>  <span class="p">(</span><span class="mi">3</span><span class="n">rd</span> <span class="n">form</span><span class="p">)</span>
+                <span class="ow">or</span><span class="p">:</span>  <span class="n">ln</span> <span class="p">[</span><span class="n">OPTION</span><span class="p">]</span><span class="o">...</span> <span class="o">-</span><span class="n">t</span> <span class="n">DIRECTORY</span> <span class="n">TARGET</span><span class="o">..</span><span class="p">(</span><span class="mi">4</span><span class="n">th</span> <span class="n">form</span><span class="p">)</span>
+                
+                <span class="n">In</span> <span class="n">the</span> <span class="mi">1</span><span class="n">st</span> <span class="n">form</span><span class="p">,</span> <span class="n">create</span> <span class="n">a</span> <span class="n">link</span> <span class="n">to</span> <span class="n">TARGET</span> <span class="k">with</span> <span class="n">the</span> <span class="n">name</span> <span class="n">LINK_NAME</span><span class="o">.</span>
+                <span class="n">In</span> <span class="n">the</span> <span class="mi">2</span><span class="n">nd</span> <span class="n">form</span><span class="p">,</span> <span class="n">create</span> <span class="n">a</span> <span class="n">link</span> <span class="n">to</span> <span class="n">TARGET</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">current</span> <span class="n">directory</span><span class="o">.</span>
+                <span class="n">In</span> <span class="n">the</span> <span class="mi">3</span><span class="n">rd</span> <span class="ow">and</span> <span class="mi">4</span><span class="n">th</span> <span class="n">forms</span><span class="p">,</span> <span class="n">create</span> <span class="n">links</span> <span class="n">to</span> <span class="n">each</span> <span class="n">TARGET</span> <span class="ow">in</span> <span class="n">DIRECTORY</span><span class="o">.</span>
+    
+    <span class="n">Arguments</span><span class="p">:</span>
+                <span class="o">--</span><span class="n">backup</span><span class="p">[</span><span class="o">=</span><span class="n">CONTROL</span><span class="p">]</span>      <span class="n">make</span> <span class="n">a</span> <span class="n">backup</span> <span class="n">of</span> <span class="n">each</span> <span class="n">existing</span> <span class="n">destination</span> <span class="n">file</span>
+      <span class="o">-</span><span class="n">b</span>                          <span class="n">like</span> <span class="o">--</span><span class="n">backup</span> <span class="n">but</span> <span class="n">does</span> <span class="ow">not</span> <span class="n">accept</span> <span class="n">an</span> <span class="n">argument</span>
+      <span class="o">-</span><span class="n">d</span><span class="p">,</span> <span class="o">-</span><span class="n">F</span><span class="p">,</span> <span class="o">--</span><span class="n">directory</span>         <span class="n">allow</span> <span class="n">the</span> <span class="n">superuser</span> <span class="n">to</span> <span class="n">attempt</span> <span class="n">to</span> <span class="n">hard</span> <span class="n">link</span>
+                                    <span class="n">directories</span> <span class="p">(</span><span class="n">note</span><span class="p">:</span> <span class="n">will</span> <span class="n">probably</span> <span class="n">fail</span> <span class="n">due</span> <span class="n">to</span>
+                                    <span class="n">system</span> <span class="n">restrictions</span><span class="p">,</span> <span class="n">even</span> <span class="k">for</span> <span class="n">the</span> <span class="n">superuser</span><span class="p">)</span>
+      <span class="o">-</span><span class="n">f</span><span class="p">,</span> <span class="o">--</span><span class="n">force</span>                 <span class="n">remove</span> <span class="n">existing</span> <span class="n">destination</span> <span class="n">files</span>
+      <span class="o">-</span><span class="n">i</span><span class="p">,</span> <span class="o">--</span><span class="n">interactive</span>           <span class="n">prompt</span> <span class="n">whether</span> <span class="n">to</span> <span class="n">remove</span> <span class="n">destinations</span>
+      <span class="o">-</span><span class="n">L</span><span class="p">,</span> <span class="o">--</span><span class="n">logical</span>               <span class="n">dereference</span> <span class="n">TARGETs</span> <span class="n">that</span> <span class="n">are</span> <span class="n">symbolic</span> <span class="n">links</span>
+      <span class="o">-</span><span class="n">n</span><span class="p">,</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">dereference</span>        <span class="n">treat</span> <span class="n">LINK_NAME</span> <span class="k">as</span> <span class="n">a</span> <span class="n">normal</span> <span class="n">file</span> <span class="k">if</span>
+                                    <span class="n">it</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">symbolic</span> <span class="n">link</span> <span class="n">to</span> <span class="n">a</span> <span class="n">directory</span>
+      <span class="o">-</span><span class="n">P</span><span class="p">,</span> <span class="o">--</span><span class="n">physical</span>              <span class="n">make</span> <span class="n">hard</span> <span class="n">links</span> <span class="n">directly</span> <span class="n">to</span> <span class="n">symbolic</span> <span class="n">links</span>
+      <span class="o">-</span><span class="n">r</span><span class="p">,</span> <span class="o">--</span><span class="n">relative</span>              <span class="n">create</span> <span class="n">symbolic</span> <span class="n">links</span> <span class="n">relative</span> <span class="n">to</span> <span class="n">link</span> <span class="n">location</span>
+      <span class="o">-</span><span class="n">s</span><span class="p">,</span> <span class="o">--</span><span class="n">symbolic</span>              <span class="n">make</span> <span class="n">symbolic</span> <span class="n">links</span> <span class="n">instead</span> <span class="n">of</span> <span class="n">hard</span> <span class="n">links</span>
+      <span class="o">-</span><span class="n">S</span><span class="p">,</span> <span class="o">--</span><span class="n">suffix</span><span class="o">=</span><span class="n">SUFFIX</span>         <span class="n">override</span> <span class="n">the</span> <span class="n">usual</span> <span class="n">backup</span> <span class="n">suffix</span>
+      <span class="o">-</span><span class="n">t</span><span class="p">,</span> <span class="o">--</span><span class="n">target</span><span class="o">-</span><span class="n">directory</span><span class="o">=</span><span class="n">DIRECTORY</span>  <span class="n">specify</span> <span class="n">the</span> <span class="n">DIRECTORY</span> <span class="ow">in</span> <span class="n">which</span> <span class="n">to</span> <span class="n">create</span> <span class="n">the</span> <span class="n">links</span>
+      <span class="o">-</span><span class="n">T</span><span class="p">,</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">target</span><span class="o">-</span><span class="n">directory</span>   <span class="n">treat</span> <span class="n">LINK_NAME</span> <span class="k">as</span> <span class="n">a</span> <span class="n">normal</span> <span class="n">file</span> <span class="n">always</span>
+</pre></div>
+</div>
+<p>``</br></p>
+<p><code class="docutils literal notranslate"><span class="pre">vim</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">vim</span>\<span class="n">vi</span> <span class="n">command</span> <span class="ow">is</span> <span class="n">used</span> <span class="n">to</span> <span class="nb">open</span> <span class="n">files</span>
+    <span class="n">Usage</span><span class="p">:</span> <span class="n">vim</span> <span class="p">[</span><span class="n">arguments</span><span class="p">]</span> <span class="p">[</span><span class="n">file</span> <span class="o">..</span><span class="p">]</span>       <span class="n">edit</span> <span class="n">specified</span> <span class="n">file</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+               <span class="ow">or</span><span class="p">:</span> <span class="n">vim</span> <span class="p">[</span><span class="n">arguments</span><span class="p">]</span> <span class="o">-</span>               <span class="n">read</span> <span class="n">text</span> <span class="kn">from</span> <span class="nn">stdin</span>
+               <span class="ow">or</span><span class="p">:</span> <span class="n">vim</span> <span class="p">[</span><span class="n">arguments</span><span class="p">]</span> <span class="o">-</span><span class="n">t</span> <span class="n">tag</span>          <span class="n">edit</span> <span class="n">file</span> <span class="n">where</span> <span class="n">tag</span> <span class="ow">is</span> <span class="n">defined</span>
+               <span class="ow">or</span><span class="p">:</span> <span class="n">vim</span> <span class="p">[</span><span class="n">arguments</span><span class="p">]</span> <span class="o">-</span><span class="n">q</span> <span class="p">[</span><span class="n">errorfile</span><span class="p">]</span>  <span class="n">edit</span> <span class="n">file</span> <span class="k">with</span> <span class="n">first</span> <span class="n">error</span>
+
+    <span class="n">Arguments</span><span class="p">:</span>
+       <span class="o">--</span>                   <span class="n">Only</span> <span class="n">file</span> <span class="n">names</span> <span class="n">after</span> <span class="n">this</span>
+       <span class="o">-</span><span class="n">v</span>                   <span class="n">Vi</span> <span class="n">mode</span> <span class="p">(</span><span class="n">like</span> <span class="s2">&quot;vi&quot;</span><span class="p">)</span>
+       <span class="o">-</span><span class="n">e</span>                   <span class="n">Ex</span> <span class="n">mode</span> <span class="p">(</span><span class="n">like</span> <span class="s2">&quot;ex&quot;</span><span class="p">)</span>
+       <span class="o">-</span><span class="n">E</span>                   <span class="n">Improved</span> <span class="n">Ex</span> <span class="n">mode</span>
+       <span class="o">-</span><span class="n">s</span>                   <span class="n">Silent</span> <span class="p">(</span><span class="n">batch</span><span class="p">)</span> <span class="n">mode</span> <span class="p">(</span><span class="n">only</span> <span class="k">for</span> <span class="s2">&quot;ex&quot;</span><span class="p">)</span>
+       <span class="o">-</span><span class="n">d</span>                   <span class="n">Diff</span> <span class="n">mode</span> <span class="p">(</span><span class="n">like</span> <span class="s2">&quot;vimdiff&quot;</span><span class="p">)</span>
+       <span class="o">-</span><span class="n">y</span>                   <span class="n">Easy</span> <span class="n">mode</span> <span class="p">(</span><span class="n">like</span> <span class="s2">&quot;evim&quot;</span><span class="p">,</span> <span class="n">modeless</span><span class="p">)</span>
+       <span class="o">-</span><span class="n">R</span>                   <span class="n">Readonly</span> <span class="n">mode</span> <span class="p">(</span><span class="n">like</span> <span class="s2">&quot;view&quot;</span><span class="p">)</span>
+       <span class="o">-</span><span class="n">Z</span>                   <span class="n">Restricted</span> <span class="n">mode</span> <span class="p">(</span><span class="n">like</span> <span class="s2">&quot;rvim&quot;</span><span class="p">)</span>
+       <span class="o">-</span><span class="n">m</span>                   <span class="n">Modifications</span> <span class="p">(</span><span class="n">writing</span> <span class="n">files</span><span class="p">)</span> <span class="ow">not</span> <span class="n">allowed</span>
+       <span class="o">-</span><span class="n">M</span>                   <span class="n">Modifications</span> <span class="ow">in</span> <span class="n">text</span> <span class="ow">not</span> <span class="n">allowed</span>
+       <span class="o">-</span><span class="n">b</span>                   <span class="n">Binary</span> <span class="n">mode</span>
+       <span class="o">-</span><span class="n">l</span>                   <span class="n">Lisp</span> <span class="n">mode</span>
+       <span class="o">-</span><span class="n">C</span>                   <span class="n">Compatible</span> <span class="k">with</span> <span class="n">Vi</span><span class="p">:</span> <span class="s1">&#39;compatible&#39;</span>
+       <span class="o">-</span><span class="n">N</span>                   <span class="n">Not</span> <span class="n">fully</span> <span class="n">Vi</span> <span class="n">compatible</span><span class="p">:</span> <span class="s1">&#39;nocompatible&#39;</span>
+       <span class="o">-</span><span class="n">V</span><span class="p">[</span><span class="n">N</span><span class="p">][</span><span class="n">fname</span><span class="p">]</span>  <span class="n">Be</span> <span class="n">verbose</span> <span class="p">[</span><span class="n">level</span> <span class="n">N</span><span class="p">]</span> <span class="p">[</span><span class="n">log</span> <span class="n">messages</span> <span class="n">to</span> <span class="n">fname</span><span class="p">]</span>
+       <span class="o">-</span><span class="n">D</span>                   <span class="n">Debugging</span> <span class="n">mode</span>
+       <span class="o">-</span><span class="n">n</span>                   <span class="n">No</span> <span class="n">swap</span> <span class="n">file</span><span class="p">,</span> <span class="n">use</span> <span class="n">memory</span> <span class="n">only</span>
+       <span class="o">-</span><span class="n">r</span>                   <span class="n">List</span> <span class="n">swap</span> <span class="n">files</span> <span class="ow">and</span> <span class="n">exit</span>
+       <span class="o">-</span><span class="n">r</span> <span class="p">(</span><span class="k">with</span> <span class="n">file</span> <span class="n">name</span><span class="p">)</span>  <span class="n">Recover</span> <span class="n">crashed</span> <span class="n">session</span>
+</pre></div>
+</div>
+<p>``</br></p>
+<p><code class="docutils literal notranslate"><span class="pre">cat</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    Concatenate FILE(s) to standard output. 
+    With no FILE, or when FILE is -, read standard input.
+
+    Usage: cat argument file        
+    Arguments:
+      -A, --show-all                    equivalent to -vET
+      -b, --number-nonblank     number nonempty output lines, overrides -n
+      -e                                     equivalent to -vE
+      -E, --show-ends               display $ at end of each line
+      -n, --number                     number all output lines
+      -s, --squeeze-blank          suppress repeated empty output lines
+      
+      Examples:
+        cat f - g  Output f&#39;s contents, then standard input, then g&#39;s contents.
+        cat        Copy standard input to standard output.
+</pre></div>
+</div>
+<p>``</br></p>
+<p><code class="docutils literal notranslate"><span class="pre">grep</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">Search</span> <span class="k">for</span> <span class="n">PATTERN</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">FILE</span> <span class="ow">or</span> <span class="n">standard</span> <span class="nb">input</span>
+    <span class="n">Usage</span><span class="p">:</span> <span class="n">grep</span> <span class="p">[</span><span class="n">OPTION</span><span class="p">]</span><span class="o">...</span> <span class="n">PATTERN</span> <span class="p">[</span><span class="n">FILE</span><span class="p">]</span><span class="o">...</span>
+        
+    <span class="n">Arguments</span><span class="p">:</span>
+       <span class="o">-</span><span class="n">E</span><span class="p">,</span> <span class="o">--</span><span class="n">extended</span><span class="o">-</span><span class="n">regexp</span>     <span class="n">PATTERN</span> <span class="ow">is</span> <span class="n">an</span> <span class="n">extended</span> <span class="n">regular</span> <span class="n">expression</span> <span class="p">(</span><span class="n">ERE</span><span class="p">)</span>
+      <span class="o">-</span><span class="n">F</span><span class="p">,</span> <span class="o">--</span><span class="n">fixed</span><span class="o">-</span><span class="n">strings</span>       <span class="n">PATTERN</span> <span class="ow">is</span> <span class="n">a</span> <span class="nb">set</span> <span class="n">of</span> <span class="n">newline</span><span class="o">-</span><span class="n">separated</span> <span class="n">strings</span>
+      <span class="o">-</span><span class="n">G</span><span class="p">,</span> <span class="o">--</span><span class="n">basic</span><span class="o">-</span><span class="n">regexp</span>        <span class="n">PATTERN</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">basic</span> <span class="n">regular</span> <span class="n">expression</span> <span class="p">(</span><span class="n">BRE</span><span class="p">)</span>
+      <span class="o">-</span><span class="n">P</span><span class="p">,</span> <span class="o">--</span><span class="n">perl</span><span class="o">-</span><span class="n">regexp</span>         <span class="n">PATTERN</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">Perl</span> <span class="n">regular</span> <span class="n">expression</span>
+      <span class="o">-</span><span class="n">e</span><span class="p">,</span> <span class="o">--</span><span class="n">regexp</span><span class="o">=</span><span class="n">PATTERN</span>      <span class="n">use</span> <span class="n">PATTERN</span> <span class="k">for</span> <span class="n">matching</span>
+      <span class="o">-</span><span class="n">f</span><span class="p">,</span> <span class="o">--</span><span class="n">file</span><span class="o">=</span><span class="n">FILE</span>           <span class="n">obtain</span> <span class="n">PATTERN</span> <span class="kn">from</span> <span class="nn">FILE</span>
+      <span class="o">-</span><span class="n">i</span><span class="p">,</span> <span class="o">--</span><span class="n">ignore</span><span class="o">-</span><span class="n">case</span>         <span class="n">ignore</span> <span class="n">case</span> <span class="n">distinctions</span>
+      <span class="o">-</span><span class="n">w</span><span class="p">,</span> <span class="o">--</span><span class="n">word</span><span class="o">-</span><span class="n">regexp</span>         <span class="n">force</span> <span class="n">PATTERN</span> <span class="n">to</span> <span class="n">match</span> <span class="n">only</span> <span class="n">whole</span> <span class="n">words</span>
+      <span class="o">-</span><span class="n">x</span><span class="p">,</span> <span class="o">--</span><span class="n">line</span><span class="o">-</span><span class="n">regexp</span>         <span class="n">force</span> <span class="n">PATTERN</span> <span class="n">to</span> <span class="n">match</span> <span class="n">only</span> <span class="n">whole</span> <span class="n">lines</span>
+      <span class="o">-</span><span class="n">z</span><span class="p">,</span> <span class="o">--</span><span class="n">null</span><span class="o">-</span><span class="n">data</span>           <span class="n">a</span> <span class="n">data</span> <span class="n">line</span> <span class="n">ends</span> <span class="ow">in</span> <span class="mi">0</span> <span class="n">byte</span><span class="p">,</span> <span class="ow">not</span> <span class="n">newline</span>
+
+    <span class="n">Miscellaneous</span><span class="p">:</span>
+      <span class="o">-</span><span class="n">s</span><span class="p">,</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">messages</span>         <span class="n">suppress</span> <span class="n">error</span> <span class="n">messages</span>
+      <span class="o">-</span><span class="n">v</span><span class="p">,</span> <span class="o">--</span><span class="n">invert</span><span class="o">-</span><span class="n">match</span>        <span class="n">select</span> <span class="n">non</span><span class="o">-</span><span class="n">matching</span> <span class="n">lines</span>
+      <span class="o">-</span><span class="n">V</span><span class="p">,</span> <span class="o">--</span><span class="n">version</span>             <span class="n">display</span> <span class="n">version</span> <span class="n">information</span> <span class="ow">and</span> <span class="n">exit</span>
+          <span class="o">--</span><span class="n">help</span>                <span class="n">display</span> <span class="n">this</span> <span class="n">help</span> <span class="n">text</span> <span class="ow">and</span> <span class="n">exit</span>
+
+    <span class="n">Output</span> <span class="n">control</span><span class="p">:</span>
+      <span class="o">-</span><span class="n">m</span><span class="p">,</span> <span class="o">--</span><span class="nb">max</span><span class="o">-</span><span class="n">count</span><span class="o">=</span><span class="n">NUM</span>       <span class="n">stop</span> <span class="n">after</span> <span class="n">NUM</span> <span class="n">matches</span>
+      <span class="o">-</span><span class="n">b</span><span class="p">,</span> <span class="o">--</span><span class="n">byte</span><span class="o">-</span><span class="n">offset</span>         <span class="nb">print</span> <span class="n">the</span> <span class="n">byte</span> <span class="n">offset</span> <span class="k">with</span> <span class="n">output</span> <span class="n">lines</span>
+      <span class="o">-</span><span class="n">n</span><span class="p">,</span> <span class="o">--</span><span class="n">line</span><span class="o">-</span><span class="n">number</span>         <span class="nb">print</span> <span class="n">line</span> <span class="n">number</span> <span class="k">with</span> <span class="n">output</span> <span class="n">lines</span>
+          <span class="o">--</span><span class="n">line</span><span class="o">-</span><span class="n">buffered</span>       <span class="n">flush</span> <span class="n">output</span> <span class="n">on</span> <span class="n">every</span> <span class="n">line</span>
+      <span class="o">-</span><span class="n">H</span><span class="p">,</span> <span class="o">--</span><span class="k">with</span><span class="o">-</span><span class="n">filename</span>       <span class="nb">print</span> <span class="n">the</span> <span class="n">file</span> <span class="n">name</span> <span class="k">for</span> <span class="n">each</span> <span class="n">match</span>
+      <span class="o">-</span><span class="n">h</span><span class="p">,</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">filename</span>         <span class="n">suppress</span> <span class="n">the</span> <span class="n">file</span> <span class="n">name</span> <span class="n">prefix</span> <span class="n">on</span> <span class="n">output</span>
+          <span class="o">--</span><span class="n">label</span><span class="o">=</span><span class="n">LABEL</span>         <span class="n">use</span> <span class="n">LABEL</span> <span class="k">as</span> <span class="n">the</span> <span class="n">standard</span> <span class="nb">input</span> <span class="n">file</span> <span class="n">name</span> <span class="n">prefix</span>
+      <span class="o">-</span><span class="n">o</span><span class="p">,</span> <span class="o">--</span><span class="n">only</span><span class="o">-</span><span class="n">matching</span>       <span class="n">show</span> <span class="n">only</span> <span class="n">the</span> <span class="n">part</span> <span class="n">of</span> <span class="n">a</span> <span class="n">line</span> <span class="n">matching</span> <span class="n">PATTERN</span>
+      <span class="o">-</span><span class="n">q</span><span class="p">,</span> <span class="o">--</span><span class="n">quiet</span><span class="p">,</span> <span class="o">--</span><span class="n">silent</span>     <span class="n">suppress</span> <span class="nb">all</span> <span class="n">normal</span> <span class="n">output</span>
+          <span class="o">--</span><span class="n">binary</span><span class="o">-</span><span class="n">files</span><span class="o">=</span><span class="n">TYPE</span>   <span class="n">assume</span> <span class="n">that</span> <span class="n">binary</span> <span class="n">files</span> <span class="n">are</span> <span class="n">TYPE</span><span class="p">;</span>
+                                <span class="n">TYPE</span> <span class="ow">is</span> <span class="s1">&#39;binary&#39;</span><span class="p">,</span> <span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="ow">or</span> <span class="s1">&#39;without-match&#39;</span>
+      <span class="o">-</span><span class="n">a</span><span class="p">,</span> <span class="o">--</span><span class="n">text</span>                <span class="n">equivalent</span> <span class="n">to</span> <span class="o">--</span><span class="n">binary</span><span class="o">-</span><span class="n">files</span><span class="o">=</span><span class="n">text</span>
+      <span class="o">-</span><span class="n">I</span>                        <span class="n">equivalent</span> <span class="n">to</span> <span class="o">--</span><span class="n">binary</span><span class="o">-</span><span class="n">files</span><span class="o">=</span><span class="n">without</span><span class="o">-</span><span class="n">match</span>
+      <span class="o">-</span><span class="n">d</span><span class="p">,</span> <span class="o">--</span><span class="n">directories</span><span class="o">=</span><span class="n">ACTION</span>  <span class="n">how</span> <span class="n">to</span> <span class="n">handle</span> <span class="n">directories</span><span class="p">;</span>
+                                <span class="n">ACTION</span> <span class="ow">is</span> <span class="s1">&#39;read&#39;</span><span class="p">,</span> <span class="s1">&#39;recurse&#39;</span><span class="p">,</span> <span class="ow">or</span> <span class="s1">&#39;skip&#39;</span>
+      <span class="o">-</span><span class="n">D</span><span class="p">,</span> <span class="o">--</span><span class="n">devices</span><span class="o">=</span><span class="n">ACTION</span>      <span class="n">how</span> <span class="n">to</span> <span class="n">handle</span> <span class="n">devices</span><span class="p">,</span> <span class="n">FIFOs</span> <span class="ow">and</span> <span class="n">sockets</span><span class="p">;</span>
+                                <span class="n">ACTION</span> <span class="ow">is</span> <span class="s1">&#39;read&#39;</span> <span class="ow">or</span> <span class="s1">&#39;skip&#39;</span>
+      <span class="o">-</span><span class="n">r</span><span class="p">,</span> <span class="o">--</span><span class="n">recursive</span>           <span class="n">like</span> <span class="o">--</span><span class="n">directories</span><span class="o">=</span><span class="n">recurse</span>
+      <span class="o">-</span><span class="n">R</span><span class="p">,</span> <span class="o">--</span><span class="n">dereference</span><span class="o">-</span><span class="n">recursive</span>  <span class="n">likewise</span><span class="p">,</span> <span class="n">but</span> <span class="n">follow</span> <span class="nb">all</span> <span class="n">symlinks</span>
+          <span class="o">--</span><span class="n">include</span><span class="o">=</span><span class="n">FILE_PATTERN</span>  <span class="n">search</span> <span class="n">only</span> <span class="n">files</span> <span class="n">that</span> <span class="n">match</span> <span class="n">FILE_PATTERN</span>
+          <span class="o">--</span><span class="n">exclude</span><span class="o">=</span><span class="n">FILE_PATTERN</span>  <span class="n">skip</span> <span class="n">files</span> <span class="ow">and</span> <span class="n">directories</span> <span class="n">matching</span> <span class="n">FILE_PATTERN</span>
+          <span class="o">--</span><span class="n">exclude</span><span class="o">-</span><span class="n">from</span><span class="o">=</span><span class="n">FILE</span>   <span class="n">skip</span> <span class="n">files</span> <span class="n">matching</span> <span class="nb">any</span> <span class="n">file</span> <span class="n">pattern</span> <span class="kn">from</span> <span class="nn">FILE</span>
+          <span class="o">--</span><span class="n">exclude</span><span class="o">-</span><span class="nb">dir</span><span class="o">=</span><span class="n">PATTERN</span>  <span class="n">directories</span> <span class="n">that</span> <span class="n">match</span> <span class="n">PATTERN</span> <span class="n">will</span> <span class="n">be</span> <span class="n">skipped</span><span class="o">.</span>
+      <span class="o">-</span><span class="n">L</span><span class="p">,</span> <span class="o">--</span><span class="n">files</span><span class="o">-</span><span class="n">without</span><span class="o">-</span><span class="n">match</span>  <span class="nb">print</span> <span class="n">only</span> <span class="n">names</span> <span class="n">of</span> <span class="n">FILEs</span> <span class="n">containing</span> <span class="n">no</span> <span class="n">match</span>
+      <span class="o">-</span><span class="n">l</span><span class="p">,</span> <span class="o">--</span><span class="n">files</span><span class="o">-</span><span class="k">with</span><span class="o">-</span><span class="n">matches</span>  <span class="nb">print</span> <span class="n">only</span> <span class="n">names</span> <span class="n">of</span> <span class="n">FILEs</span> <span class="n">containing</span> <span class="n">matches</span>
+      <span class="o">-</span><span class="n">c</span><span class="p">,</span> <span class="o">--</span><span class="n">count</span>               <span class="nb">print</span> <span class="n">only</span> <span class="n">a</span> <span class="n">count</span> <span class="n">of</span> <span class="n">matching</span> <span class="n">lines</span> <span class="n">per</span> <span class="n">FILE</span>
+      <span class="o">-</span><span class="n">T</span><span class="p">,</span> <span class="o">--</span><span class="n">initial</span><span class="o">-</span><span class="n">tab</span>         <span class="n">make</span> <span class="n">tabs</span> <span class="n">line</span> <span class="n">up</span> <span class="p">(</span><span class="k">if</span> <span class="n">needed</span><span class="p">)</span>
+      <span class="o">-</span><span class="n">Z</span><span class="p">,</span> <span class="o">--</span><span class="n">null</span>                <span class="nb">print</span> <span class="mi">0</span> <span class="n">byte</span> <span class="n">after</span> <span class="n">FILE</span> <span class="n">name</span>
+
+    <span class="n">Context</span> <span class="n">control</span><span class="p">:</span>
+      <span class="o">-</span><span class="n">B</span><span class="p">,</span> <span class="o">--</span><span class="n">before</span><span class="o">-</span><span class="n">context</span><span class="o">=</span><span class="n">NUM</span>  <span class="nb">print</span> <span class="n">NUM</span> <span class="n">lines</span> <span class="n">of</span> <span class="n">leading</span> <span class="n">context</span>
+      <span class="o">-</span><span class="n">A</span><span class="p">,</span> <span class="o">--</span><span class="n">after</span><span class="o">-</span><span class="n">context</span><span class="o">=</span><span class="n">NUM</span>   <span class="nb">print</span> <span class="n">NUM</span> <span class="n">lines</span> <span class="n">of</span> <span class="n">trailing</span> <span class="n">context</span>
+      <span class="o">-</span><span class="n">C</span><span class="p">,</span> <span class="o">--</span><span class="n">context</span><span class="o">=</span><span class="n">NUM</span>         <span class="nb">print</span> <span class="n">NUM</span> <span class="n">lines</span> <span class="n">of</span> <span class="n">output</span> <span class="n">context</span>
+      <span class="o">-</span><span class="n">NUM</span>                      <span class="n">same</span> <span class="k">as</span> <span class="o">--</span><span class="n">context</span><span class="o">=</span><span class="n">NUM</span>
+          <span class="o">--</span><span class="n">color</span><span class="p">[</span><span class="o">=</span><span class="n">WHEN</span><span class="p">],</span>
+          <span class="o">--</span><span class="n">colour</span><span class="p">[</span><span class="o">=</span><span class="n">WHEN</span><span class="p">]</span>       <span class="n">use</span> <span class="n">markers</span> <span class="n">to</span> <span class="n">highlight</span> <span class="n">the</span> <span class="n">matching</span> <span class="n">strings</span><span class="p">;</span>
+                                <span class="n">WHEN</span> <span class="ow">is</span> <span class="s1">&#39;always&#39;</span><span class="p">,</span> <span class="s1">&#39;never&#39;</span><span class="p">,</span> <span class="ow">or</span> <span class="s1">&#39;auto&#39;</span>
+      <span class="o">-</span><span class="n">U</span><span class="p">,</span> <span class="o">--</span><span class="n">binary</span>              <span class="n">do</span> <span class="ow">not</span> <span class="n">strip</span> <span class="n">CR</span> <span class="n">characters</span> <span class="n">at</span> <span class="n">EOL</span> <span class="p">(</span><span class="n">MSDOS</span><span class="o">/</span><span class="n">Windows</span><span class="p">)</span>
+      <span class="o">-</span><span class="n">u</span><span class="p">,</span> <span class="o">--</span><span class="n">unix</span><span class="o">-</span><span class="n">byte</span><span class="o">-</span><span class="n">offsets</span>   <span class="n">report</span> <span class="n">offsets</span> <span class="k">as</span> <span class="k">if</span> <span class="n">CRs</span> <span class="n">were</span> <span class="ow">not</span> <span class="n">there</span>
+                                <span class="p">(</span><span class="n">MSDOS</span><span class="o">/</span><span class="n">Windows</span><span class="p">)</span>
+
+    <span class="s1">&#39;egrep&#39;</span> <span class="n">means</span> <span class="s1">&#39;grep -E&#39;</span><span class="o">.</span>  <span class="s1">&#39;fgrep&#39;</span> <span class="n">means</span> <span class="s1">&#39;grep -F&#39;</span><span class="o">.</span> 
+    <span class="n">Direct</span> <span class="n">invocation</span> <span class="k">as</span> <span class="n">either</span> <span class="s1">&#39;egrep&#39;</span> <span class="ow">or</span> <span class="s1">&#39;fgrep&#39;</span> <span class="ow">is</span> <span class="n">deprecated</span><span class="o">.</span>
+    <span class="n">When</span> <span class="n">FILE</span> <span class="ow">is</span> <span class="o">-</span><span class="p">,</span> <span class="n">read</span> <span class="n">standard</span> <span class="nb">input</span><span class="o">.</span>  <span class="n">With</span> <span class="n">no</span> <span class="n">FILE</span><span class="p">,</span> <span class="n">read</span> <span class="o">.</span> <span class="k">if</span> <span class="n">a</span> <span class="n">command</span><span class="o">-</span><span class="n">line</span> <span class="o">-</span><span class="n">r</span> <span class="ow">is</span> <span class="n">given</span><span class="p">,</span> <span class="o">-</span> <span class="n">otherwise</span><span class="o">.</span>  <span class="n">If</span> <span class="n">fewer</span> <span class="n">than</span> <span class="n">two</span> <span class="n">FILEs</span> <span class="n">are</span> <span class="n">given</span><span class="p">,</span> <span class="n">assume</span> <span class="o">-</span><span class="n">h</span><span class="o">.</span>
+    <span class="n">Exit</span> <span class="n">status</span> <span class="ow">is</span> <span class="mi">0</span> <span class="k">if</span> <span class="nb">any</span> <span class="n">line</span> <span class="ow">is</span> <span class="n">selected</span><span class="p">,</span> <span class="mi">1</span> <span class="n">otherwise</span><span class="p">;</span>
+    <span class="k">if</span> <span class="nb">any</span> <span class="n">error</span> <span class="n">occurs</span> <span class="ow">and</span> <span class="o">-</span><span class="n">q</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">given</span><span class="p">,</span> <span class="n">the</span> <span class="n">exit</span> <span class="n">status</span> <span class="ow">is</span> <span class="mf">2.</span>
+</pre></div>
+</div>
+<p>``</br></p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="Options/admonition.html" class="btn btn-neutral" title="Admonition Syntax" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Sandeep Gumudelli.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

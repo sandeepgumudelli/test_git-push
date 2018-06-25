@@ -62,3 +62,11 @@ Testing using *Shiny* branch
 
    Options/table
    Options/admonition
+
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: item
+
+   item
