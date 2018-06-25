@@ -1,6 +1,5 @@
 ---
-title: 'Linux Commands'
-media_order: 'Linux Directory Structure.jpg'
+Linux Commands
 ---
 
 
@@ -15,7 +14,7 @@ media_order: 'Linux Directory Structure.jpg'
 		-m, --mode=MODE			Set file mode (as in chmod), not a=rwx - umask
 		-p, --parents					 No error if existing, make parent directories as needed
 		-v, --verbose             	     Print a message for each created directory
-``</br>
+</br>
 
 `ls`
 
@@ -32,7 +31,7 @@ media_order: 'Linux Directory Structure.jpg'
         -n, --numeric-uid-gid      	   Like -l, but list numeric user and group IDs
         -r, --reverse                   	Reverse order while sorting
         -t                                    	 Sort by modification time, newest first
- ``</br>
+ </br>
   
   
 `cd`
@@ -45,14 +44,14 @@ media_order: 'Linux Directory Structure.jpg'
 		cd ../../..			It will move to the third parent directory
 		cd ~               It will move to the home directory
 
- ``</br> 
+ </br> 
 
 `pwd`
 
 	 	pwd (print working directory) command displays the current working directory
 		Usage: pwd
 
-``</br> 
+</br> 
 
 `rmdir`
 
@@ -63,7 +62,7 @@ media_order: 'Linux Directory Structure.jpg'
 		p, --parents   	Remove DIRECTORY and its ancestors</br>
 		-v, --verbose  	Output a diagnostic for every directory processed </br>
 
- ``</br> 
+ </br> 
 
 #### *File Maintenance Commands*
 
@@ -88,7 +87,7 @@ media_order: 'Linux Directory Structure.jpg'
         			                   WORD is access, a time, or use: equivalent to -a
                     			       WORD is modify or mtime: equivalent to -m
 
- ``</br>
+ </br>
 
 `find`
 
@@ -114,7 +113,7 @@ media_order: 'Linux Directory Structure.jpg'
 		-exec COMMAND ; -exec COMMAND {} + -ok COMMAND ;
 		-execdir COMMAND ; -execdir COMMAND {} + -okdir COMMAND ;
 
- ``</br>
+ </br>
 
 `locate`
 
@@ -131,7 +130,7 @@ media_order: 'Linux Directory Structure.jpg'
 		locate uses a previously built database, If database is not updated then locate command will not show the output. To sync the database it is must to execute updatedb command
 		Usage: updated
 
-  ``</br>
+  </br>
 
 `umask`
 
@@ -152,7 +151,7 @@ media_order: 'Linux Directory Structure.jpg'
 			Base permissions for file 			666
 
  
- ``</br>
+ </br>
  
 `chmod`
 
@@ -171,7 +170,7 @@ media_order: 'Linux Directory Structure.jpg'
       	--reference=RFILE  		use RFILE's mode instead of MODE values
   		-R, --recursive        		 change files and directories recursively
  
-``</br>
+</br>
 
 `chown`
 
@@ -199,7 +198,7 @@ media_order: 'Linux Directory Structure.jpg'
           chown -hR root /u   Change the owner of /u and subfiles to "root".
 
  
-``</br>
+</br>
 
 `chgrp`
 
@@ -225,7 +224,7 @@ media_order: 'Linux Directory Structure.jpg'
          chgrp staff /u      	Change the group of /u to "staff".
  		 chgrp -hR staff /u  Change the group of /u and subfiles to "staff".
 
-``</br>
+</br>
 
 `cp`
 
@@ -265,7 +264,7 @@ media_order: 'Linux Directory Structure.jpg'
   		-v, --verbose                			explains what is being done
   		-x, --one-file-system        		stays on this file system
 
-``</br>
+</br>
 
 `mv`
 
@@ -288,7 +287,7 @@ media_order: 'Linux Directory Structure.jpg'
   		-v, --verbose                			explains what is being done
   		-x, --one-file-system        		stays on this file system
 
-``</br>
+</br>
 
 `rm`
 
@@ -313,7 +312,7 @@ media_order: 'Linux Directory Structure.jpg'
   		rm -- -foo
   		rm ./-foo
 
-``</br>
+</br>
 
 `file`
 
@@ -355,7 +354,7 @@ media_order: 'Linux Directory Structure.jpg'
   		-C, --compile              		compile file specified by -m
   		-d, --debug                		print debugging messages
 
-``</br>  
+</br>  
 
 `wc
 
@@ -373,7 +372,7 @@ media_order: 'Linux Directory Structure.jpg'
  		-L, --max-line-length  print the maximum display width
   		-w, --words            print the word counts
 
-``</br> 
+</br> 
 
 `ln`
 
@@ -406,7 +405,7 @@ media_order: 'Linux Directory Structure.jpg'
           -t, --target-directory=DIRECTORY  specify the DIRECTORY in which to create the links
           -T, --no-target-directory   treat LINK_NAME as a normal file always
 
-``</br>
+</br>
 
 `vim`
 
@@ -438,7 +437,7 @@ media_order: 'Linux Directory Structure.jpg'
            -r                   List swap files and exit
            -r (with file name)  Recover crashed session
 
-``</br>
+</br>
 
 `cat`
 
@@ -459,7 +458,7 @@ media_order: 'Linux Directory Structure.jpg'
   			cat        Copy standard input to standard output.
 
 
-``</br>
+</br>
 
 `grep`
 
@@ -532,4 +531,4 @@ media_order: 'Linux Directory Structure.jpg'
         Exit status is 0 if any line is selected, 1 otherwise;
         if any error occurs and -q is not given, the exit status is 2.
 
-``</br>
+</br>
