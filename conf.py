@@ -155,7 +155,7 @@ texinfo_documents = [
      'Miscellaneous'),
 ]
 
-# Markdown support
+# Markdown support   
 
 from recommonmark.parser import CommonMarkParser
 
