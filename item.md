@@ -1,7 +1,7 @@
 ---
 Linux Commands
 ---
-Sandeep testing mkdir
+
 
 #### *Navigation and Directory Control Commands*
 
